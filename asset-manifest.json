@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/yeggership/static/js/main.fce12780.js",
+    "main.js": "/yeggership/static/js/main.cb462286.js",
     "static/js/787.43f29dc2.chunk.js": "/yeggership/static/js/787.43f29dc2.chunk.js",
     "static/media/logo_512_grey_transparent.png": "/yeggership/static/media/logo_512_grey_transparent.4ee25b9bf860d7c8d41c.png",
     "static/media/logo_512_white_transparent.png": "/yeggership/static/media/logo_512_white_transparent.d393fc42a4fa29911d6e.png",
     "index.html": "/yeggership/index.html",
-    "main.fce12780.js.map": "/yeggership/static/js/main.fce12780.js.map",
+    "main.cb462286.js.map": "/yeggership/static/js/main.cb462286.js.map",
     "787.43f29dc2.chunk.js.map": "/yeggership/static/js/787.43f29dc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.fce12780.js"
+    "static/js/main.cb462286.js"
   ]
 }
