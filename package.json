@@ -1,7 +1,7 @@
 {
   "name": "yeggership",
   "version": "0.1.0",
-  "homepage": "https://macdonch.github.io/yeggership",
+  "homepage": "https://macdonch.github.io/yeggership/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

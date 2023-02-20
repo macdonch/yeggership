@@ -145,7 +145,7 @@ function NavBar(props) {
               textDecoration: 'none',
             }}
           >
-            SMALL
+            YEGGERSHIP
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}> 

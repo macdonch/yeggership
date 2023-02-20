@@ -839,8 +839,8 @@ const GetTrinket = () => {
         'Pamphlet: Android Overlords',
         'Cigarettes (Grinning Skull)',
         'Pictorial Pornography, Dogeared, Well-thumbed', 
-        'Interstellar Compass,',
-        'Pills: Areca Nut Always Points to Homeworld'
+        'Interstellar Compass,  Always Points to Homeworld',
+        'Pills: Areca Nut'
     ];
     const trinket = trinkets[Math.floor(Math.random()*trinkets.length)];
     return trinket;

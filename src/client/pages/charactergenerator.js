@@ -743,7 +743,12 @@ const CharacterGenerator = () => {
         case 'Mycotoxin Induced Analgesia':
           _characterSummary['health'] = {health: 20, wounds: wounds};
           setHealth(20);
-          break;    
+          break;
+        case 'Sports Scholarship':
+        case 'Specimen':
+          _characterSummary['health'] = {health: health, wounds: 3};
+          setWounds(3);
+          break;           
       }
       setCharacterSummary(_characterSummary);
       generatePdf();
