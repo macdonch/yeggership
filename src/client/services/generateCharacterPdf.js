@@ -216,8 +216,8 @@ const GenerateCharacterPdf = (characterSummary) => {
       margin: 5,
       padding: 5,
       flexGrow: 1,
-      minWidth: 255,
-      maxWidth: 265
+      minWidth: 250,
+      maxWidth: 260
     },
     version: {
     margin: 0,
