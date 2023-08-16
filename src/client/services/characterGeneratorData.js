@@ -40,7 +40,7 @@ const GetCharacterClasses = () => {
             },
             master: {},
             bonus: "Choose 1 EXPERT skill OR 2 TRAINED skills",
-            traumaResponse: 'Fear saves made by nearby friendly players are at disadvantage.'
+            traumaResponse: 'Fear saves made by close friendly players are at disadvantage.'
         },
         marine: {
             displayText: 'Marine',
@@ -84,7 +84,7 @@ const GetCharacterClasses = () => {
             },
             master: {},
             bonus: "Choose 1 EXPERT skill OR 2 TRAINED skills",
-            traumaResponse: 'Whenever you panic, every nearby friendly player must make a fear save.'
+            traumaResponse: 'Whenever you panic, every close friendly player must make a fear save.'
         },
         scientist: {
             displayText: 'Scientist',
@@ -114,7 +114,7 @@ const GetCharacterClasses = () => {
                 command: false,
             },
             bonus: "Choose 1 MASTER skill tree AND 1 TRAINED skill",
-            traumaResponse: 'Whenever you fail a sanity save, all nearby friendly players gain 1 stress.'
+            traumaResponse: 'Whenever you fail a sanity save, all close friendly players gain 1 stress.'
         },
         teamster: {
             displayText: 'Teamster',
@@ -420,7 +420,7 @@ const GetLoadout = (characterClass) => {
             5: [
                 'Standard Crew Attire (AP 1)',
                 'Stun Baton',
-                'Small Pet'
+                'Small Pet (organic)'
             ],
             6: [
                 'Standard Crew Attire (AP 1)',
@@ -429,12 +429,12 @@ const GetLoadout = (characterClass) => {
             ],
             7: [
                 'Standard Crew Attire (AP 1)',
-                '1 Frag Grenade',
+                'Frag Grenade',
                 'Pen Knife'
             ],
             8: [
                 'Manufacturer Supplied Attire (AP 1)',
-                '1 Jump-9 Ticket (destination blank)'
+                'Jump-9 Ticket (destination blank)'
             ],
             9: [
                 'Corporate Attire (AP 1)',
@@ -445,7 +445,7 @@ const GetLoadout = (characterClass) => {
             0: [
                 'Tank Top and Camo Pants (AP 1)',
                 'Combat Knife (as Scalpel DMG [+])',
-                'Stimpak x1'
+                'Stimpak (5)'
             ],
             1: [
                 'Advanced Battle Dress (AP 10)',
@@ -472,19 +472,19 @@ const GetLoadout = (characterClass) => {
             5: [
                 'Standard Battle Dress (AP 7)',
                 'SMG (3 mags)',
-                'MRE x7'
+                'MRE (7)'
             ],
             6: [
                 'Fatigues (AP 2)',
                 'Combat Shotgun (2 rounds)',
-                'Dog',
+                'Dog (pet)',
                 'Leash',
                 'Tennis Ball'
             ],
             7: [
                 'Fatigues (AP 2)',
                 'Revolver (12 rounds)',
-                'Single Frag Grenade'
+                'Frag Grenade'
             ],
             8: [
                 'Dress Uniform (AP 1)',
@@ -507,7 +507,7 @@ const GetLoadout = (characterClass) => {
             1: [
                 'Hazard Suit (AP 5)',
                 'Flamethrower (1 charge)',
-                'Pain Pills',
+                'Stimpak (1)',
                 'Electronic Tool Set'
             ],
             2: [
@@ -515,7 +515,7 @@ const GetLoadout = (characterClass) => {
                 'Rigging Gun',
                 'Sample Collection Kit',
                 'Flashlight',
-                'Lab Rat (small pet)'
+                'Lab Rat (pet)'
             ],
             3: [
                 'Vaccsuit (AP 3)',
@@ -526,7 +526,7 @@ const GetLoadout = (characterClass) => {
             ],
             4: [
                 'Lab Coat (AP 1)',
-                'Screwdriver',
+                'Screwdriver (as Assorted Tools)',
                 'Medscanner',
                 'Vaccine (1 dose)'
             ],
@@ -538,7 +538,7 @@ const GetLoadout = (characterClass) => {
             6: [
                 'Scrubs (AP 1)',
                 'Scalpel',
-                'Automed x6',
+                'Automed (5)',
                 'Oxygen Tank with Filter Mask'
             ],
             7: [
@@ -601,7 +601,7 @@ const GetLoadout = (characterClass) => {
                 'Standard Crew Attire (AP 1)',
                 'Combat Shotgun (4 rounds)',
                 'Extension Cord (20m)',
-                'Cat'
+                'Cat (pet)'
             ],
             7: [
                 'Standard Crew Attire (AP 1)',
@@ -613,14 +613,14 @@ const GetLoadout = (characterClass) => {
             8: [
                 'Standard Crew Attire (AP 1)',
                 'Flare Gun (2 rounds)',
-                'Water Filter',
+                'Water Filtration Device',
                 'Personal Locator',
                 'Subsurface Scanner'
             ],
             9: [
                 'Lounge Wear (AP 1)',
                 'Crowbar',
-                'Pain Pills',
+                'Stimpak (1)',
                 'Six Pack of Beer                '
             ]
         }
@@ -959,9 +959,9 @@ const GetTalents = (characterClass) => {
 
 const GetExpertSkillsByTrainedSkill = (trainedSkill) => {
     const expertSkills = {
-        linguistics: [],
+        linguistics: ['psychology'],
         zoology: ['psychology', 'pathology', 'fieldMedicine'],
-        botany: ['psychology', 'pathology', 'fieldMedicine', 'ecology', 'wildernessSurvival'],
+        botany: ['pathology', 'ecology', 'wildernessSurvival'],
         geology: ['ecology', 'asteroidMining'],
         industrialEquipment: ['asteroidMining', 'mechanicalRepair'],
         juryRigging: ['mechanicalRepair', 'explosives'],
@@ -990,7 +990,7 @@ const GetExpertSkillsByMasterSkill = (masterSkill) => {
         cybernetics: ['mechanicalRepair'],
         artificialIntelligence: ['hacking'],
         hyperspace: ['physics', 'piloting', 'mysticism'],
-        xenoesotericism: ['physics', 'piloting'],
+        xenoesotericism: ['mysticism'],
         command: ['piloting', 'firearms'],    
     }
     return expertSkills[masterSkill];
@@ -998,9 +998,9 @@ const GetExpertSkillsByMasterSkill = (masterSkill) => {
 
 const GetTrainedSkillsByExpertSkill = (expertSkill) => {
     const trainedSkills = {
-        psychology: ['zoology', 'botany'],
+        psychology: ['zoology', 'linguistics'],
         pathology: ['zoology', 'botany'],
-        fieldMedicine: ['zoology', 'botany'],
+        fieldMedicine: ['zoology'],
         ecology: ['botany', 'geology'],
         asteroidMining: ['geology', 'industrialEquipment'],
         mechanicalRepair: ['industrialEquipment', 'juryRigging'],
@@ -1008,7 +1008,7 @@ const GetTrainedSkillsByExpertSkill = (expertSkill) => {
         pharmacology: ['chemistry'],
         hacking: ['computers'],
         piloting: ['zeroG'],
-        physics: ['piloting', 'firearms'],
+        physics: ['mathematics'],
         mysticism: ['art', 'archaeology', 'theology'],
         wildernessSurvival: ['botany', 'militaryTraining'],
         firearms: ['rimwise', 'militaryTraining'],

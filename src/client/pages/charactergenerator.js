@@ -384,7 +384,7 @@ const CharacterGenerator = () => {
   }
 
   const setDisabledForOptionalSkills = (skillType, boolDisabled) => {
-        const _characterSkills = characterSkills;
+    const _characterSkills = characterSkills;
     const _updatedSkills = [];
     _characterSkills[skillType].forEach(skill => {
       if (skill['baseSkill'] === false && skill['checked'] === false) {
@@ -395,7 +395,7 @@ const CharacterGenerator = () => {
     });
     _characterSkills[skillType] = _updatedSkills;
     setCharacterSkills(_characterSkills);
-      }
+  }
 
   const handleCharacterClassChange = (event) => {
     const currentClass = event.target.value;

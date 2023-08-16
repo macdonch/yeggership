@@ -73,7 +73,7 @@ const HandleCharClassChange = (event) => {
         setIntellectMod(0);
         setCombatMod(10);
         setSanityMod(0);
-        setFearMod(10);
+        setFearMod(20);
         setBodyMod(10);
         setWounds(3);
         break;
