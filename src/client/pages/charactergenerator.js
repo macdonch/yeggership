@@ -206,7 +206,7 @@ const CharacterGenerator = () => {
     const skillName = arrSkill[1];
     let boolChecked;
 
-        const _trainedSkills = [];
+    const _trainedSkills = [];
     const _expertSkills = [];
     const _masterSkills = [];
     // toggle skill
@@ -268,7 +268,7 @@ const CharacterGenerator = () => {
         setMasterSkills(_masterSkills);
         break;
     }
-        switch(characterClass) {
+    switch(characterClass) {
       case 'android':
         switch(skillType) {
           case 'trained':
