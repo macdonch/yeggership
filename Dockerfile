@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:18
+FROM node:18 as build
 ENV GENERATE_SOURCEMAP=false
 ENV PUBLIC_URL=/
 
@@ -20,6 +20,9 @@ COPY . /usr/src/app
 
 RUN npm run build
 
-EXPOSE 80
+RUN ls -al
 
-CMD [ "npm", "run", "start" ]
+FROM nginx:mainline-alpine-slim
+EXPOSE 80
+COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
