@@ -22,4 +22,4 @@ RUN npm run build
 
 CMD [ "npm", "run", "deploy" ]
 
-EXPOSE 8080
+EXPOSE 80
