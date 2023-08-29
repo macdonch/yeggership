@@ -25,4 +25,4 @@ RUN ls -al
 FROM nginx:mainline-alpine-slim
 EXPOSE 80
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /usr/src/app/build /usr/share/nginx/html
+COPY --from=build ./build /usr/share/nginx/html
