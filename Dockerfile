@@ -20,6 +20,6 @@ COPY . /usr/src/app
 
 RUN npm run build
 
-CMD [ "npm", "run", "deploy" ]
+CMD [ "npm", "run", "start" ]
 
 EXPOSE 80
