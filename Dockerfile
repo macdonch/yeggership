@@ -21,8 +21,9 @@ COPY . /usr/src/app
 RUN npm run build
 
 RUN ls -al
+run pwd
 
 FROM nginx:mainline-alpine-slim
 EXPOSE 80
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build ./build /usr/share/nginx/html
+COPY --from=build /home/node/app/build /usr/share/nginx/html
