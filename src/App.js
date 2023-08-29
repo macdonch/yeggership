@@ -43,11 +43,11 @@ class App extends React.Component {
           <Container maxWidth="xl">
             <NavBar state={state} handleChange={this.handleChange}/>
               <Routes>
-                <Route exact path={"/yeggership/"} element={ <Home />} />
-                <Route path={"/yeggership/charactergenerator"} element={<CharacterGenerator />} />
-                <Route path={"/yeggership/about"} element={<About />} />
-                <Route path={"/yeggership/contact"} element={<Contact />} />
-                <Route path={"/yeggership/faq"} element={<Faq />} />
+                <Route exact path={"/"} element={ <Home />} />
+                <Route path={"/charactergenerator"} element={<CharacterGenerator />} />
+                <Route path={"/about"} element={<About />} />
+                <Route path={"/contact"} element={<Contact />} />
+                <Route path={"/faq"} element={<Faq />} />
               </Routes>
           </Container>
         </ThemeProvider>

@@ -508,7 +508,7 @@ const CharacterGenerator = () => {
 
     for (let i = 0; i < statValues.length; i++) {
       const foundIndex = availStats.indexOf(statValues[i]);
-      if (foundIndex != -1) {
+      if (foundIndex !==-1) {
         availStats.splice(foundIndex, 1);
       }
     }
@@ -535,7 +535,7 @@ const CharacterGenerator = () => {
 
     for (let i = 0; i < saveValues.length; i++) {
       const foundIndex = availSaves.indexOf(saveValues[i]);
-      if (foundIndex != -1) {
+      if (foundIndex !==-1) {
         availSaves.splice(foundIndex, 1);
       }
     }
@@ -693,6 +693,7 @@ const CharacterGenerator = () => {
         } else {
           strAlert = '';
         }
+        break;
       case 'marine':
         if (_skillsCount.trained === 2 && _skillsCount.expert === 0) {
           strAlert = 'Please choose an expert skill or 2 trained skills.';
@@ -723,7 +724,7 @@ const CharacterGenerator = () => {
     }
 
     
-    if (strAlert != '') {
+    if (strAlert !=='') {
       setSkillsConfirmedAlerts(strAlert);
     } else {
       setSkillsConfirmed(true);
@@ -788,7 +789,7 @@ const CharacterGenerator = () => {
       strAlert = '';
     }
     
-    if (strAlert != '') {
+    if (strAlert !=='') {
       setScientistMasterSkillConfirmedAlerts(strAlert);
     } else {
       setScientistMasterSkillConfirmedAlerts('');

@@ -197,7 +197,7 @@ const HandleCharClassChange = (event) => {
 
     for (let i = 0; i < statValues.length; i++) {
       const foundIndex = availStats.indexOf(statValues[i]);
-      if (foundIndex != -1) {
+      if (foundIndex !==-1) {
         availStats.splice(foundIndex, 1);
       }
     }

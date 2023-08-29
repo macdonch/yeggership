@@ -26,10 +26,10 @@ const GetContent = (name) => {
 
 const GetPages = () => {
     const pages = [
-        {displayText: 'Home', key: 'home', path: '/yeggership/'},
-        {displayText: 'PC Gen', key: 'faq', path: '/yeggership/charactergenerator'},
-        {displayText: 'About', key: 'about', path: '/yeggership/about'},
-        {displayText: 'Contact', key: 'contact', path: '/yeggership/contact'},
+        {displayText: 'Home', key: 'home', path: '/'},
+        {displayText: 'PC Gen', key: 'faq', path: '/charactergenerator'},
+        {displayText: 'About', key: 'about', path: '/about'},
+        {displayText: 'Contact', key: 'contact', path: '/contact'},
     ];
     return pages;
 }
