@@ -5,6 +5,7 @@ import About from "./client/pages/about";
 import Contact from "./client/pages/contact";
 import Faq from "./client/pages/faq";
 import CharacterGenerator from "./client/pages/charactergenerator"
+import FillableCharacter from "./client/pages/fillablecharacter"
 import Container from '@mui/material/Container';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
@@ -45,6 +46,7 @@ class App extends React.Component {
               <Routes>
                 <Route exact path={"/"} element={ <Home />} />
                 <Route path={"/charactergenerator"} element={<CharacterGenerator />} />
+                <Route path={"/fillablecharacter"} element={<FillableCharacter />} />
                 <Route path={"/about"} element={<About />} />
                 <Route path={"/contact"} element={<Contact />} />
                 <Route path={"/faq"} element={<Faq />} />

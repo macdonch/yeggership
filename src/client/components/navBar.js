@@ -21,7 +21,7 @@ import { useTheme } from '@mui/material/styles';
 const pages = GetPages();
 
 function NavBar(props) {
-    const location = useLocation();
+  const location = useLocation();
 
   const theme = useTheme();
   const primary = theme.palette.primary.main;
