@@ -846,9 +846,9 @@ const GetTrinket = () => {
     return trinket;
 }
 
-const GetTalents = (characterClass) => {
+const GetTalents = (characterClass, manual) => {
     let talentsList;
-    const talents = [];
+    let talents = [];
     const genericTalents = [
         {
             name: 'Nimble',
@@ -946,13 +946,19 @@ const GetTalents = (characterClass) => {
         case 'teamster':
             talentsList = genericTalents.concat(teamsterTalents);
             break;
+        default:
+            talentsList = genericTalents;
     }
 
-    while (talents.length < 3) {
-        const index = Math.floor(Math.random()*talentsList.length)
-        const talent = talentsList[index];
-        talentsList.splice(index, 1);
-        talents.push(talent);
+    if (manual) {
+        talents = talentsList;
+    } else {
+        while (talents.length < 3) {
+            const index = Math.floor(Math.random()*talentsList.length)
+            const talent = talentsList[index];
+            talentsList.splice(index, 1);
+            talents.push(talent);
+        }
     }
     return talents
 }

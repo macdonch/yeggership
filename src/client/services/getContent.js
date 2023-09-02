@@ -27,7 +27,8 @@ const GetContent = (name) => {
 const GetPages = () => {
     const pages = [
         {displayText: 'Home', key: 'home', path: '/'},
-        {displayText: 'PC Gen', key: 'faq', path: '/charactergenerator'},
+        {displayText: 'PC Gen', key: 'pcgen', path: '/charactergenerator'},
+        {displayText: 'Character Sheet', key: 'charactersheet', path: '/fillablecharacter'},
         {displayText: 'About', key: 'about', path: '/about'},
         {displayText: 'Contact', key: 'contact', path: '/contact'},
     ];

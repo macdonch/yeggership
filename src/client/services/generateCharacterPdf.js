@@ -123,14 +123,14 @@ const GenerateCharacterPdf = (characterSummary) => {
     flexGrow: 1,
     },
     name: {
-    marginTop: 0,
+    marginTop: 10,
     marginBottom: 5,
-    padding: 5,
-    fontSize: 14,
+    padding: 10,
+    fontSize: 13,
     borderBottom: 2,
     borderColor: '#2c2e30',
     width: 360,
-    color: '#ffffff'
+    color: '#2c2e30'
     },
     class: {
     marginTop: 10,
@@ -245,7 +245,7 @@ const GenerateCharacterPdf = (characterSummary) => {
               <Image src={Logo} style={{width: 50}}/>
             </View>
             <View style={styles.name}>
-              <Text> </Text>
+              <Text>{characterSummary.name}</Text>
             </View>
             <View style={styles.class}>
               <Text>{(characterSummary.class).toUpperCase()}</Text>
