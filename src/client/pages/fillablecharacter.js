@@ -20,12 +20,6 @@ import { Document, Page, Text, View, StyleSheet, PDFDownloadLink } from '@react-
 import {
   GetCharacterClasses,
   GetSkills,
-  GetExpertSkillsByTrainedSkill,
-  GetExpertSkillsByMasterSkill,
-  GetTrainedSkillsByExpertSkill,
-  GetLoadout,
-  GetTrinket,
-  GetPatch,
   GetTalents
 } from '../services/characterGeneratorData'
 import GenerateCharacterPdf from "../services/generateCharacterPdf";
@@ -73,10 +67,6 @@ const FillableCharacter = () => {
       };
     };
     return _characterSkills;
-  }
-
-  const formattedTalents = () => {
-
   }
 
   // object contains setStateFunctions
