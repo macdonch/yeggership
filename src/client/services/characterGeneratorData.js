@@ -84,7 +84,7 @@ const GetCharacterClasses = () => {
             },
             master: {},
             bonus: "Choose 1 EXPERT skill OR 2 TRAINED skills",
-            traumaResponse: 'Whenever you panic, every close friendly player must make a fear save.'
+            traumaResponse: 'Whenever you panic, every close friendly\nplayer must make a fear save.'
         },
         scientist: {
             displayText: 'Scientist',
@@ -182,22 +182,22 @@ const GetSkills = () => {
             },
             geology: {
                 displayText: 'Geology',
-                description: 'The study of the solid features of any terrestrial planet or its satellites.',
+                description: 'The study of the solid features of any\nterrestrial planet or its satellites.',
                 bonus: '+10'
             },
             industrialEquipment: {
                 displayText: 'Industrial Equipment',
-                description: 'The safe and proper use of heavy machinery and tools (exosuits, forklifts, drills, breakers, laser cutters, etc.).',
+                description: 'The safe and proper use of heavy machinery and tools\n(exosuits, forklifts, drills, breakers,\nlaser cutters, etc.).',
                 bonus: '+10'
             },
             juryRigging: {
                 displayText: 'Jury-Rigging',
-                description: 'Makeshift repair, using only the tools and materials at hand.',
+                description: 'Makeshift repair, using only the tools and materials\nat hand.',
                 bonus: '+10'
             },
             chemistry: {
                 displayText: 'Chemistry',
-                description: 'The study of matter and its chemical elements and compounds.',
+                description: 'The study of matter and its chemical elements\nand compounds.',
                 bonus: '+10'
             },
             computers: {
@@ -207,7 +207,7 @@ const GetSkills = () => {
             },
             zeroG: {
                 displayText: 'Zero-G',
-                description: 'Practice and know-how of working in a vacuum, orientation, vaccsuit operation, etc.',
+                description: 'Practice and know-how of working in a vacuum,\norientation, vaccsuit operation, etc.',
                 bonus: '+10'
             },
             mathematics: {
@@ -217,7 +217,7 @@ const GetSkills = () => {
             },
             art: {
                 displayText: 'Art',
-                description: 'The expression or application of a species\' creative ability and imagination.',
+                description: 'The expression or application of a species\'\ncreative ability and imagination.',
                 bonus: '+10'
             },
             archaeology: {
@@ -227,7 +227,7 @@ const GetSkills = () => {
             },
             theology: {
                 displayText: 'Theology',
-                description: 'The study of the divine or devotion to a religion.',
+                description: 'The study of the divine or devotion to a\nreligion.',
                 bonus: '+10'
             },
             militaryTraining: {
@@ -268,12 +268,12 @@ const GetSkills = () => {
                 bonus: '+15'
             },
             asteroidMining: {
-                displayText: 'Asteroid Mining',
+                displayText: 'Asteroid\nMining',
                 description: 'Training in the tools and procedures used for mining asteroids.',
                 bonus: '+15'
             },
             mechanicalRepair: {
-                displayText: 'Mechanical Repair',
+                displayText: 'Mechanical\nRepair',
                 description: 'Fixing broken machines.',
                 bonus: '+15'
             },
@@ -289,7 +289,7 @@ const GetSkills = () => {
             },
             hacking: {
                 displayText: 'Hacking',
-                description: 'Unauthorized access to computer systems and networks.',
+                description: 'Unauthorized access to computer systems and\nnetworks.',
                 bonus: '+15'
             },
             piloting: {
@@ -336,7 +336,7 @@ const GetSkills = () => {
             },
             surgery: {
                 displayText: 'Surgery',
-                description: 'Manually operating on living or dead biological subjects.',
+                description: 'Manually operating on living or dead biological\nsubjects.',
                 bonus: '+20'
             },
             planetology: {
@@ -351,12 +351,12 @@ const GetSkills = () => {
             },
             engineering: {
                 displayText: 'Engineering',
-                description: 'The design, building, and use of engines, machines, and structures.',
+                description: 'The design, building, and use of engines, machines,\nand structures.',
                 bonus: '+20'
             },
             cybernetics: {
                 displayText: 'Cybernetics',
-                description: 'The physical and neural interfaces between organisms and machines.',
+                description: 'The physical and neural interfaces between organisms\nand machines.',
                 bonus: '+20'
             },
             artificialIntelligence: {
@@ -762,7 +762,7 @@ const GetTrinket = () => {
         'Corroded Android Logic Core', 
         'Pamphlet: The Relic of Flesh', 
         'Spray Paint',
-        'Pamphlet: Signs of Parasitical Infection', 
+        'Pamphlet: Signs of Parasitical\nInfection', 
         'Pamphlet: The Indifferent Stars', 
         'Wanted Poster, Weathered',
         'Manual: Treat Your Rifle Like A Lady', 
@@ -888,7 +888,7 @@ const GetTalents = (characterClass, manual) => {
         },
         {
             name: 'Deflector',
-            description: 'Once per session, you can make an Intellect or Speed check to redirect an attack from you to a close friendly character of your choosing.'
+            description: 'Once per session, you can make an\nIntellect or Speed check to redirect an attack from you to a close friendly character of your choosing.'
         },
     ];
     const androidTalents = [
