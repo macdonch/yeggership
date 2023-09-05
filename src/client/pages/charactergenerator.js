@@ -366,6 +366,9 @@ const CharacterGenerator = () => {
             // if > 2 disable 
             if (_trainedSkills.length > 2) {
               setDisabledForOptionalSkills('trained', true);
+              if (_expertSkills.length > 0) {
+                setDisabledForOptionalSkills('expert', true);
+              }
             } else {
               setDisabledForOptionalSkills('trained', false);
             }
@@ -388,7 +391,7 @@ const CharacterGenerator = () => {
     const _updatedSkills = [];
     _characterSkills[skillType].forEach(skill => {
       if (skill['baseSkill'] === false && skill['checked'] === false) {
-                skill['disabled'] = boolDisabled;
+        skill['disabled'] = boolDisabled;
       }
       _updatedSkills.push(skill);
 
@@ -764,14 +767,16 @@ const CharacterGenerator = () => {
     let strAlert = '';
     let found = false;
     let trainedSkill;
-    let sophontology = false;
+    //let sophontology = false;
     // need to loop through and find checked
         ['trained', 'expert', 'master'].forEach(skillType => {
       found = false;
       for (const [key, value] of Object.entries(characterSkills[skillType])) {
+        /*
         if (value['value'] === 'sophontology') {
           sophontology = true;
         }
+        */
         if (value['checked']) {
           found = true;
           if (skillType === 'trained') {
@@ -785,9 +790,9 @@ const CharacterGenerator = () => {
     });
 
     // override expert skill for sophontology
-    if (sophontology && strAlert.indexOf('expert') > 0 && !houseRules) {
-      strAlert = '';
-    }
+    //if (sophontology && strAlert.indexOf('expert') > 0 && !houseRules) {
+    //  strAlert = '';
+    //}
     
     if (strAlert !=='') {
       setScientistMasterSkillConfirmedAlerts(strAlert);
@@ -1092,7 +1097,7 @@ const CharacterGenerator = () => {
           <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex'} }}>
             <Typography  sx={{ display: { xs: 'none', sm: 'block'} }}>
               The Mothership character generator guides you through creating a character, and generates a pdf file for download.<br />
-              Use the 'Rules' dropdown to choose between the Mothership 1e rules, and 'House Rules'.<br />
+              Use the 'Rules' dropdown to choose between the Mothership 1e rules (Standard), and 'House Rules'.<br />
               The 'House Rules' allow you to select which roll results to use in your Stats and Saves, and generate a 'Talent' selection.<br />
               <br />
             </Typography>
