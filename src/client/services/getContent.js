@@ -1,6 +1,6 @@
 import Home from '../pages/home.js';
 import About from '../pages/about.js';
-import Contact from '../pages/contact.js';
+import Resources from '../pages/resources.js';
 import Faq from '../pages/faq.js';
 
 const GetContent = (name) => {
@@ -12,8 +12,8 @@ const GetContent = (name) => {
         case 'about':
             content = About;
             break;
-        case 'contact':
-            content = Contact;
+        case 'resources':
+            content = Resources;
             break;
         case 'faq':
             content = Faq;
@@ -29,8 +29,8 @@ const GetPages = () => {
         {displayText: 'Home', key: 'home', path: '/'},
         {displayText: 'PC Gen', key: 'pcgen', path: '/charactergenerator'},
         {displayText: 'Character Sheet', key: 'charactersheet', path: '/fillablecharacter'},
+        {displayText: 'Resources', key: 'resources', path: '/resources'},
         {displayText: 'About', key: 'about', path: '/about'},
-        {displayText: 'Contact', key: 'contact', path: '/contact'},
     ];
     return pages;
 }
