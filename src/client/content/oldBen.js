@@ -1,9 +1,6 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import DownloadIcon from '@mui/icons-material/Download';
-import HeadphonesIcon from '@mui/icons-material/Headphones'
 
 const OldBen = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/characters/oldben/';
