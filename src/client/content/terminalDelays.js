@@ -6,7 +6,11 @@ import DownloadIcon from '@mui/icons-material/Download';
 import HeadphonesIcon from '@mui/icons-material/Headphones'
 
 const TerminalDelays = () => {
-  const driveThruUrl = 'https://preview.drivethrurpg.com/en/product/365735/mothership-terminal-delays-at-anarene-s-folly';
+  const module = {
+    driveThruUrl: 'https://preview.drivethrurpg.com/en/product/365735/mothership-terminal-delays-at-anarene-s-folly',
+    title: 'Terminal Delays',
+    type: 'pamphlet module'
+  }
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/terminaldelays/';
   const downloadUrl = gcsFolderUrl + 'TerminalDelays.zip';
   const audioUrl = gcsFolderUrl + 'cryoboostFinal.mp3';
@@ -62,15 +66,15 @@ const TerminalDelays = () => {
         <Grid container rowSpacing={1} alignItems="top">
           <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
             <Box display="inline">
-            <Typography display="inline">
-                <i>Terminal Delays</i> is a pamplet module published by Tuesday Knight Games. It is availabe for 
-                purchase at &nbsp;
-                <Link display="inline" underline="hover" target="_blank" rel="noopener" href={driveThruUrl}>
-                  DriveThruRPG
-                </Link>
-                .
-            </Typography>
-          </Box>
+              <Typography display="inline">
+                  <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
+                  purchase at &nbsp;
+                  <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                    DriveThruRPG
+                  </Link>
+                  .
+              </Typography>
+            </Box>
           </Grid>
           <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
             <Typography display="inline">
