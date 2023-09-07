@@ -1,10 +1,8 @@
 import React from "react";
 import NavBar from './client/components/navBar';
 import Home from "./client/pages/home";
-import About from "./client/pages/about";
 import Resources from "./client/pages/resources";
 import CharacterGallery from "./client/pages/charactergallery";
-import Faq from "./client/pages/faq";
 import CharacterGenerator from "./client/pages/charactergenerator"
 import FillableCharacter from "./client/pages/fillablecharacter"
 import Container from '@mui/material/Container';
@@ -48,9 +46,7 @@ class App extends React.Component {
                 <Route exact path={"/"} element={ <Home />} />
                 <Route path={"/charactergenerator"} element={<CharacterGenerator />} />
                 <Route path={"/fillablecharacter"} element={<FillableCharacter />} />
-                <Route path={"/about"} element={<About />} />
                 <Route path={"/resources"} element={<Resources />} />
-                <Route path={"/faq"} element={<Faq />} />
                 <Route path={"/charactergallery"} element={<CharacterGallery />} />
               </Routes>
           </Container>
