@@ -3,6 +3,7 @@ import NavBar from './client/components/navBar';
 import Home from "./client/pages/home";
 import About from "./client/pages/about";
 import Resources from "./client/pages/resources";
+import CharacterGallery from "./client/pages/charactergallery";
 import Faq from "./client/pages/faq";
 import CharacterGenerator from "./client/pages/charactergenerator"
 import FillableCharacter from "./client/pages/fillablecharacter"
@@ -50,6 +51,7 @@ class App extends React.Component {
                 <Route path={"/about"} element={<About />} />
                 <Route path={"/resources"} element={<Resources />} />
                 <Route path={"/faq"} element={<Faq />} />
+                <Route path={"/charactergallery"} element={<CharacterGallery />} />
               </Routes>
           </Container>
         </ThemeProvider>

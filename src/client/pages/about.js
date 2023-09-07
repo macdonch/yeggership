@@ -18,19 +18,19 @@ const About = () => {
 
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: "1rem" } }}>
+          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
             <Typography>Discord: </Typography>
             <Link underline="hover" target="_blank" rel="noopener" href="https://discordapp.com/users/458484150828269578" sx={{ display: { xs: 'none', sm: 'block'} }}>
               leibniz_2013
             </Link>
           </Grid>
-          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: "1rem" } }}>
+          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
             <Typography>GitHub: </Typography>
             <Link underline="hover" target="_blank" rel="noopener" href="https://github.com/macdonch" sx={{ display: { xs: 'none', sm: 'block'} }}>
               macdonch
             </Link>
           </Grid>
-          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: "1rem" } }}>
+          <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
             <Typography>RedBubble: </Typography>
             <Link underline="hover" target="_blank" rel="noopener" href="https://www.redbubble.com/people/leibniz/shop" sx={{ display: { xs: 'none', sm: 'block'} }}>
               leibniz

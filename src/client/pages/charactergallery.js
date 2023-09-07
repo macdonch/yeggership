@@ -4,22 +4,22 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-import { GetResources, GetResourceContent } from '../services/getResources'
+import { GetCharacters, GetCharacterContent } from '../services/getCharacters'
 
-const Resources = () => {
+const CharacterGallery = () => {
   const theme = useTheme();
   const primary = theme.palette.primary.main;
   const secondary = theme.palette.secondary.main;
 
-  const sideBar = GetResources();
+  const sideBar = GetCharacters();
 
-  const Home = GetResourceContent('resourcesHome');
+  const Home = GetCharacterContent('charactersHome');
 
   const [currentContent, setCurrentContent] = React.useState(Home);
-  const [fontWeight, setFontWeight] = React.useState({resourcesHome: 'bold'});
+  const [fontWeight, setFontWeight] = React.useState({charactersHome: 'bold'});
 
   const selectContent = (event) => {
-    setCurrentContent(GetResourceContent(event.currentTarget.id));
+    setCurrentContent(GetCharacterContent(event.currentTarget.id));
     for (const key of Object.keys(fontWeight)) {
         fontWeight[key] = 'normal';
     }
@@ -64,4 +64,4 @@ const Resources = () => {
     </Box>
   );
 }
-export default Resources; 
+export default CharacterGallery; 
