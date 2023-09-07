@@ -61,54 +61,54 @@ const TerminalDelays = () => {
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
           <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+            <Box display="inline">
             <Typography display="inline">
-              <i>Terminal Delays</i> is a pamplet module published by Tuesday Knight Games. It is availabe for purchase at 
+                <i>Terminal Delays</i> is a pamplet module published by Tuesday Knight Games. It is availabe for 
+                purchase at &nbsp;
+                <Link display="inline" underline="hover" target="_blank" rel="noopener" href={driveThruUrl}>
+                  DriveThruRPG
+                </Link>
+                .
             </Typography>
-            <Typography display="inline" noWrap>
-              &nbsp;
-            </Typography>
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href={driveThruUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
-              DriveThruRPG
-            </Link>
-            <Typography display="inline" noWrap>
-              .
+          </Box>
+          </Grid>
+          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+            <Typography display="inline">
+              <p>
+                The PCs are trying to dock at the station "Anarene's Folly", but are delayed by the Space Traffic Controller. The 
+                module comes with an in-world audio file of an "on-hold" message, which the players will hear everytime 
+                they try to contact the station.
+              </p>
             </Typography>
           </Grid>
           <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
             <Typography display="inline">
-              The PCs are trying to dock at the station "Anarene's Folly", but are delayed by the Space Traffic Controller. The 
-              module comes with an in-world audio file of an "on-hold" message, which the players will hear everytime 
-              they try to contact the station.
-            </Typography>
-          </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography display="inline">
-              I ran this module in a single session, as a 'prequel' with pre-generated characters that appeared as NPCs later 
-              in our campaign timeline. I used Audacity to splice the "hold" message with commercials from<i>Blade Runner</i> and Public Service 
-              Announcements from <i>Starship Troopers</i>. I also created a custom commerical for "AdrenoBoost". 
-              <br />
-              <br />
-              I have made the following resources available:
-              <ul>
-                 <li>a crew manifest for the players' ship, the USCSS <i>Agamemnon</i></li>
-                 <li>character sheets for three players</li>
-                 <li>bios for the crew</li>
-                 <li>crew images to be used as tokens on Roll20</li>
-                 <li>An audio commercial for 'AdrenoBoost', intended to be played with the hold music.</li>
-              </ul>
-              These can be viewed below, or you can download them as a zip file.
-              <br />
-              <br />
+              <p>
+                I ran this module in a single session, as a 'prequel' with pre-generated characters that appeared as NPCs later 
+                in our campaign timeline. I used Audacity to splice the "hold" message with commercials from<i>Blade Runner</i> and Public Service 
+                Announcements from <i>Starship Troopers</i>. I also created a custom commerical for "AdrenoBoost". 
+              </p>
+              <p>
+                I have made the following resources available:
+                <ul>
+                  <li>a crew manifest for the players' ship, the USCSS <i>Agamemnon</i></li>
+                  <li>character sheets for three players</li>
+                  <li>bios for the crew</li>
+                  <li>crew images to be used as tokens on Roll20</li>
+                  <li>An audio commercial for "AdrenoBoost", intended to be played with the hold music.</li>
+                </ul>
+                These can be viewed below, or you can download them as a zip file.
+                </p>
+              <p>
               <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
                 Download .zip {<DownloadIcon />}
               </Link>
-              <br />
-              <br />
+              </p>
+              <p>
               <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
                 adrenoBoost Ad {<HeadphonesIcon />}
               </Link>
-              <br />
-              <br />
+              </p>
             </Typography>
           </Grid>
         </Grid>
