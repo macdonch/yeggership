@@ -852,84 +852,102 @@ const GetTalents = (characterClass, manual) => {
     const genericTalents = [
         {
             name: 'Nimble',
-            description: 'Once per session, you may reroll a speed check.'
+            description: 'Once per session, you may reroll a speed check.',
+            type: 'generic'
         },
         {
             name: 'Fluid Intelligence',
-            description: 'Once per session, you may reroll an intellect check.'
+            description: 'Once per session, you may reroll an intellect check.',
+            type: 'generic'
         },
         {
             name: 'Maximium Effort',
-            description: 'Once per session, you may reroll a strength check.'
+            description: 'Once per session, you may reroll a strength check.',
+            type: 'generic'
         },
         {
             name: 'Dead Eye',
-            description: 'Once per session, you may reroll a combat check.'
+            description: 'Once per session, you may reroll a combat check.',
+            type: 'generic'
         },
         {
             name: 'Dodge',
-            description: 'Once per session, you may make a speed check to avoid an attack.'
+            description: 'Once per session, you may make a speed check to avoid an attack.',
+            type: 'generic'
         },
         {
             name: 'Dunning-Kruger Effect',
-            description: 'Once per session, you may reduce stress instead of increasing stress on a non-critical failure.'
+            description: 'Once per session, you may reduce stress instead of increasing stress on a non-critical failure.',
+            type: 'generic'
         },
         {
             name: 'Event Planner',
-            description: 'During a rest period, friendly players use their best save and gain advantage.'
+            description: 'During a rest period, friendly players use their best save and gain advantage.',
+            type: 'generic'
         },
         {
             name: 'Medic',
-            description: 'Once per session, you can have a Death Check rerolled for another character.'
+            description: 'Once per session, you can have a Death Check rerolled for another character.',
+            type: 'generic'
         },
         {
             name: 'Black Knight',
-            description: 'You remain active for 1d3+2 rounds after your Death Check is rolled.'
+            description: 'You remain active for 1d3+2 rounds after your Death Check is rolled.',
+            type: 'generic'
         },
         {
             name: 'Deflector',
-            description: 'Once per session, you can make an\nIntellect or Speed check to redirect an attack from you to a close friendly character of your choosing.'
+            description: 'Once per session, you can make an\nIntellect or Speed check to redirect an attack from you to a close friendly character of your choosing.',
+            type: 'generic'
         },
     ];
     const androidTalents = [
         {
             name: 'Industrial Chassis',
-            description: 'You have 20 health per wound.'
+            description: 'You have 20 health per wound.',
+            type: 'android'
         },
         {
             name: 'Top of the Valley',
-            description: 'Fear saves made by nearby friendly players are at +20 and disadvantage'
+            description: 'Fear saves made by nearby friendly players are at +20 and disadvantage.',
+            type: 'android'
         }
     ];
     const marineTalents = [
         {
-            name: 'Mycotoxin Induced Analgesia',
-            description: 'You have 20 health per wound.'
+            name: 'Mycotoxin-Induced Analgesia',
+            description: 'You have 20 health per wound.',
+            type: 'marine'
         },
         {
             name: 'Motivator',
-            description: 'Once per session, friendly players get [+] on their next skill check or save in combat'
+            description: 'Once per session, friendly players get [+] on their next skill check or save in combat.',
+            type: 'marine'
         },
 
     ];
     const scientistTalents = [
         {
             name: 'Sports Scholarship',
-            description: 'You have 3 wounds.'
+            description: 'You have 3 wounds.',
+            type: 'scientist'
         },
         {
             name: 'Interdisciplinary',
-            description: 'Once per session, you may increase your bonus to +20 for any knowledge based skill check.'
+            description: 'Once per session, you may increase your bonus to +20 for any knowledge based skill check.',
+            type: 'scientist'
         },
     ];
     const teamsterTalents = [
         {
             name: 'Specimen',
-            description: 'You have 3 wounds.'
+            description: 'You have 3 wounds.',
+            type: 'teamster'
         },
         {
             name: 'Tinker',
-            description: 'Once per session, you may reroll a skill check related to building or repairing an item'
+            description: 'Once per session, you may reroll a skill check related to building or repairing an item.',
+            type: 'teamster'            
         }
     ];
 

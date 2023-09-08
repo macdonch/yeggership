@@ -744,7 +744,7 @@ const CharacterGenerator = () => {
       _characterSummary['talent'] = {name: talent, description: talentDescription};
       switch(talent) {
         case 'Industrial Chassis':
-        case 'Mycotoxin Induced Analgesia':
+        case 'Mycotoxin-Induced Analgesia':
           _characterSummary['health'] = {health: 20, wounds: wounds};
           setHealth(20);
           break;
