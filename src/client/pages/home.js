@@ -75,12 +75,12 @@ const Home = () => {
             <Typography variant={'h6'}>Campaign and Module Supplementary Content</Typography>
             <Typography display="inline">
               The&nbsp;
-              <Link display="inline" underline="hover" href="./fillablecharacter">
+              <Link display="inline" underline="hover" href="./resources">
                 RESOURCES
               </Link>
               &nbsp; page contains a campaign setting, and material we created for our own play sessions of published modules. 
               The&nbsp;
-              <Link display="inline" underline="hover" href="./fillablecharacter">
+              <Link display="inline" underline="hover" href="./charactergallery">
                 HALL OF FAME
               </Link>
               &nbsp; contains memorable characters we have encountered. Feel free to use them as NPCs in your own sessions.
