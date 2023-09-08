@@ -46,7 +46,7 @@ export function getTheme(mode) {
     const typography = {
       fontFamily: [
         'Montserrat'
-      ].join(','),
+      ].join(',')
     };
 
     const Theme = createTheme({palette: palette, typography: typography});

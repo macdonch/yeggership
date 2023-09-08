@@ -4,6 +4,7 @@ import ResourcesHome from '../content/resourcesHome';
 import FaustusSector from '../content/faustusSector';
 import HouseRules from '../content/houseRules';
 import Terraforming from '../content/terraforming';
+import Hyperspace from '../content/hyperspace';
 
 const GetResources = () => {
     const resources = [
@@ -11,6 +12,7 @@ const GetResources = () => {
         {displayText: 'Campaign Setting', key: 'faustus'},
         {displayText: 'House Rules', key: 'houserules'},
         {displayText: 'Terraforming', key: 'terraforming'},
+        {displayText: 'Hyperspace', key: 'hyperspace'},
         {displayText: 'Piece By Piece', key: 'piecebypiece'},
         {displayText: 'Terminal Delays', key: 'terminaldelays'}
     ]
@@ -24,7 +26,8 @@ const GetResourceContent = (key) => {
         piecebypiece: PieceByPiece,
         terminaldelays: TerminalDelays,
         houserules: HouseRules,
-        terraforming: Terraforming
+        terraforming: Terraforming,
+        hyperspace: Hyperspace
     }
     return content[key];
 }

@@ -9,28 +9,28 @@ const OldBen = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} sx={{ display: 'flex' }}>
             <Typography variant='h2'>
               OLD BEN
             </Typography>
           </Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={4} alignItems="top">
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: 'block' }}>
             <Typography>
-              <p>
-                'Old Ben' has been a space trucker since before FTL and will tell  
-                you stories about it whether you want to hear them or not.
-              </p>
-              <p>
-                He appears as an NPC in the 'coming soon' module <i>Nietzsche's Demon</i>.
-              </p>
-              <p>
-                'Old Ben' was created as a PC by Charles Allen.
-              </p>
+              'Old Ben' has been a space trucker since before FTL and will tell  
+              you stories about it whether you want to hear them or not.
+            </Typography>
+            <br />
+            <Typography>
+              He appears as an NPC in the 'coming soon' module <i>Nietzsche's Demon</i>.
+            </Typography>
+            <br />
+            <Typography>
+              'Old Ben' was created as a PC by Charles Allen.
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: 'block', textAlign: "center" }}>
             <Typography>"Old Ben"</Typography>
             <Box 
               component="img"

@@ -64,7 +64,7 @@ const TerminalDelays = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12}>
             <Box display="inline">
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
@@ -76,43 +76,47 @@ const TerminalDelays = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography display="inline">
-              <p>
+          <Grid sm={12}>
+            <Typography>
+              <br />
                 The PCs are trying to dock at the station "Anarene's Folly", but are delayed by the Space Traffic Controller. The 
                 module comes with an in-world audio file of an "on-hold" message, which the players will hear everytime 
                 they try to contact the station.
-              </p>
+              
             </Typography>
           </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography display="inline">
-              <p>
+          <Grid sm={12} sx={{ display: 'block' }}>
+            <Typography>
+              <br />
                 I ran this module in a single session, as a 'prequel' with pre-generated characters that appeared as NPCs later 
                 in our campaign timeline. I used Audacity to splice the "hold" message with commercials from<i>Blade Runner</i> and Public Service 
                 Announcements from <i>Starship Troopers</i>. I also created a custom commerical for "AdrenoBoost". 
-              </p>
-              <p>
+              
+              <br />
                 I have made the following resources available:
-                <ul>
-                  <li>a crew manifest for the players' ship, the USCSS <i>Agamemnon</i></li>
-                  <li>character sheets for three players</li>
-                  <li>bios for the crew</li>
-                  <li>crew images to be used as tokens on Roll20</li>
-                  <li>An audio commercial for "AdrenoBoost", intended to be played with the hold music.</li>
-                </ul>
+              
+            </Typography>
+              <ul style={{ listStyleType: 'square'}}>
+                <li>a crew manifest for the players' ship, the USCSS <i>Agamemnon</i></li>
+                <li>character sheets for three players</li>
+                <li>bios for the crew</li>
+                <li>crew images to be used as tokens on Roll20</li>
+                <li>An audio commercial for "AdrenoBoost", intended to be played with the hold music.</li>
+              </ul>
+            <Typography>
+              <br />
                 These can be viewed below, or you can download them as a zip file.
-                </p>
-              <p>
-              <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
-                Download .zip {<DownloadIcon />}
-              </Link>
-              </p>
-              <p>
-              <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
-                adrenoBoost Ad {<HeadphonesIcon />}
-              </Link>
-              </p>
+              
+              <br />
+                <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  Download .zip {<DownloadIcon />}
+                </Link>
+              
+              <br />
+                <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  adrenoBoost Ad {<HeadphonesIcon />}
+                </Link>
+              
             </Typography>
           </Grid>
         </Grid>

@@ -9,28 +9,28 @@ const Rutger = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} sx={{ display: 'flex' }}>
             <Typography variant='h2'>
               RUTGER
             </Typography>
           </Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={4} alignItems="top">
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: 'block' }}>
             <Typography>
-              <p>
-                Rutger is an uplifted chimpanzee that communcites with his peers via a text-to-speech device. 
-                He wears a patch that reads "Not a Monkey", and has a hot-key at the ready with that phrase.
-              </p>
-              <p>
-                Rutger survived <i>Vita Nova</i> and <i>Black Pyramid</i>. He is now a Teamster on the USCSS Kestrel.
-              </p>
-              <p>
-                'Rutger' was created as an NPC by Charles Allen, but became a replacement PC played by Jonathan Schell. 
-              </p>
+              Rutger is an uplifted chimpanzee that communcites with his peers via a text-to-speech device. 
+              He wears a patch that reads "Not a Monkey", and has a hot-key at the ready with that phrase.
+            </Typography>
+            <br />
+            <Typography>
+              Rutger survived <i>Vita Nova</i> and <i>Black Pyramid</i>. He is now a Teamster on the USCSS Kestrel.
+            </Typography>
+            <br />
+            <Typography>
+              'Rutger' was created as an NPC by Charles Allen, but became a replacement PC played by Jonathan Schell. 
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: 'block', textAlign: "center" }}>
             <Typography>"Rutger" by Charles Allen</Typography>
             <Box 
               component="img"

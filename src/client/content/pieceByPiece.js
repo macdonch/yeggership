@@ -70,30 +70,29 @@ const PieceByPiece = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography display="inline">
+          <Grid sm={12}>
+            <Typography>
               The PCs are hired to retrieve an item from the Daedalus Robotics Lab, which is in lockdown after a fatality was reported. A number of employees are still in the facility.
             </Typography>
           </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography display="inline">
+          <Grid sm={12} sx={{ display: 'block' }}>
+            <Typography>
               I made a few resources to supplement the pamplet:
-              <ul>
-                 <li>a blank map of the facility, which we used on Roll20 with 'Fog of War', revealing the areas as the characters explored the facility</li>
-                 <li>an "Evacuation Route" map, which the players found posted on the wall in the Employee Lounge</li>
-                 <li>a list of employees in the facility, provided to the players by the person who hired them</li>
-                 <li>AI generated images of the NPCs, used in the employee list, and as tokens on Roll20</li>
-                 <li>A 'Pin Setter' in a pool of android 'blood'. It was used by Luca in self-defense against Curtis.</li>
-              </ul>
+            </Typography>
+            <ul key="xx" style={{ listStyleType: 'square'}}>
+              <li>a blank map of the facility, which we used on Roll20 with 'Fog of War', revealing the areas as the characters explored the facility</li>
+              <li>an "Evacuation Route" map, which the players found posted on the wall in the Employee Lounge</li>
+              <li>a list of employees in the facility, provided to the players by the person who hired them</li>
+              <li>AI generated images of the NPCs, used in the employee list, and as tokens on Roll20</li>
+              <li>A 'Pin Setter' in a pool of android 'blood'. It was used by Luca in self-defense against Curtis.</li>
+            </ul>
+            <Typography>
               These can be viewed below, or you can download them as a zip file.
-              <br />
-              <br />
-              <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
                 Download .zip {<DownloadIcon />}
               </Link>
-              <br />
-              <br />
             </Typography>
+            <br />
           </Grid>
         </Grid>
         <Box>

@@ -7,20 +7,8 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Link from '@mui/material/Link';
-import DownloadIcon from '@mui/icons-material/Download';
-import { VerticalAlignTop } from '@mui/icons-material';
 
 const Terraforming = () => {
-  /*
-  const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/terraforming/';
-  const downloads = {
-    panicTable: {
-      thumbNail: gcsFolderUrl + 'panicTable.png',
-      url: gcsFolderUrl + 'panicTable.pdf'
-    }
-  }
-  */
 
   const terraforming = [
     {
@@ -54,10 +42,10 @@ const Terraforming = () => {
         </Grid>
         <Grid sm={12}>
           <Typography>
-            <p>
+            <br />
             Terraforming is broken into stages. The length of a stage in part depends on the initial state of 
             the planet, and its suitability rating.
-            </p>
+            
           </Typography>
         </Grid>
       </Grid>

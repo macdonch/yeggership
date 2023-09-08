@@ -118,10 +118,10 @@ const HouseRules = () => {
         </Grid>
         <Grid sm={12}>
           <Typography>
-            <p>
+            <br />
               We have a few house rules we play with. Some are from the Warden's Operation Manual, 
               but we also have a few of own.
-            </p>
+            
           </Typography>
         </Grid>
       </Grid>
@@ -129,13 +129,13 @@ const HouseRules = () => {
         <Grid container rowSpacing={1} alignItems="top" columnSpacing={4}>
           <Grid sm={12}>
             <Typography variant='h4'>
-              Panic Table
+              Panic Table (Revised)
             </Typography>
             <Typography>
-              <p>
+              <br />
                 We have removed 'COWARD', 'NIGHTMARES' and 'CATATONIC' from the table, made the first
                 few entries a bit more innocuous, and reordered some others.
-              </p>
+              
             </Typography>
           </Grid>
           <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex'} }}>
@@ -171,7 +171,7 @@ const HouseRules = () => {
               src={downloads.panicTable.thumbNail}
               ></Box>
             <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.panicTable.url} sx={{ display: { xs: 'none', sm: 'block'} }}>
-              Panic Table{<DownloadIcon />}
+              Panic Table {<DownloadIcon />}
             </Link>
           </Grid>
         </Grid>
