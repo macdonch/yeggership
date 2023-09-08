@@ -9,6 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Link from '@mui/material/Link';
 import DownloadIcon from '@mui/icons-material/Download';
+import { GetTalents } from '../services/characterGeneratorData';
 
 const HouseRules = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/houserules/';
@@ -16,6 +17,10 @@ const HouseRules = () => {
     panicTable: {
       thumbNail: gcsFolderUrl + 'panicTable.png',
       url: gcsFolderUrl + 'panicTable.pdf'
+    },
+    talentsTable: {
+      thumbNail: gcsFolderUrl + 'talentsTable.png',
+      url: gcsFolderUrl + 'talentsTable.pdf'
     }
   }
 
@@ -108,6 +113,34 @@ const HouseRules = () => {
     }
   ]
 
+  const talents = () => {
+    // get talents and sort by type
+    console.log('hi');
+    const arrTalents = [];
+    const arrGenericTalents = [];
+    let genericDone = false;
+    ['android', 'marine', 'scientist', 'teamster'].forEach(charClass => {
+      GetTalents(charClass, true).forEach(talent => {
+        if (talent.type !== 'generic') {
+          arrTalents.push(talent);
+        } else {
+          if (!genericDone) {
+            arrGenericTalents.push(
+              {
+                name: talent.name,
+                description: talent.description,
+                type: 'any'
+              }
+            );
+          }
+        }
+      });
+      genericDone = true;
+    });
+    console.log(arrGenericTalents.concat(arrTalents))
+    return arrGenericTalents.concat(arrTalents);
+  }
+
   return (
     <Box>
       <Grid container rowSpacing={1} alignItems="top">
@@ -117,11 +150,10 @@ const HouseRules = () => {
           </Typography>
         </Grid>
         <Grid sm={12}>
+          <br />
           <Typography>
-            <br />
               We have a few house rules we play with. Some are from the Warden's Operation Manual, 
               but we also have a few of own.
-            
           </Typography>
         </Grid>
       </Grid>
@@ -131,11 +163,10 @@ const HouseRules = () => {
             <Typography variant='h4'>
               Panic Table (Revised)
             </Typography>
+            <br />
             <Typography>
-              <br />
                 We have removed 'COWARD', 'NIGHTMARES' and 'CATATONIC' from the table, made the first
                 few entries a bit more innocuous, and reordered some others.
-              
             </Typography>
           </Grid>
           <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex'} }}>
@@ -175,6 +206,60 @@ const HouseRules = () => {
             </Link>
           </Grid>
         </Grid>
+        <Grid container rowSpacing={1} alignItems="top" columnSpacing={4}>
+          <Grid sm={12}>
+            <Typography variant='h4'>
+              Talents
+            </Typography>
+            <br />
+            <Typography>
+                We give each PC a talent that can be used once per session (unless otherwise noted). 
+                Players choose from a random list of three talents during character creation. 
+                Some talents are specific to a character class.
+            </Typography>
+          </Grid>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>TALENT</TableCell>
+                    <TableCell>DESCRIPTION</TableCell>
+                    <TableCell>CLASS</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {talents().map(({name, description, type}) => (
+                    <TableRow key={name}>
+                      <TableCell style={{ verticalAlign: 'top' }}>
+                        {name}
+                      </TableCell>
+                      <TableCell>
+                        {description}
+                      </TableCell>
+                      <TableCell>
+                        {type}
+                      </TableCell>
+                    </TableRow>
+                  ))}                
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Grid>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+            <Box 
+              component="img"
+              sx={{ 
+                height: 150
+              }}
+              src={downloads.talentsTable.thumbNail}
+              ></Box>
+            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.talentsTable.url} sx={{ display: { xs: 'none', sm: 'block'} }}>
+              Talents Table {<DownloadIcon />}
+            </Link>
+          </Grid>
+        </Grid>
+
       </Grid>
     </Box>
   );
