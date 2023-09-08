@@ -46,6 +46,10 @@ const PieceByPiece = () => {
       url: gcsFolderUrl + 'luca.png',
     },
     {
+      displayText:'Martina',
+      url: gcsFolderUrl + 'martina.png',
+    },
+    {
       displayText:'Ojo',
       url: gcsFolderUrl + 'ojo.png',
     },
