@@ -15,9 +15,7 @@ const ClawsOut = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/clawsout/';
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
-  const mothership1eLogoLight = 'https://storage.googleapis.com/mothership-375920-media/images/1eLogo_lightmode.png'
-  const mothership1eLogoDark = 'https://storage.googleapis.com/mothership-375920-media/images/1eLogo_darkmode.png'
-  const images = [];
+ const images = [];
 
   return (
     <Box>
@@ -65,8 +63,36 @@ const ClawsOut = () => {
           </Grid>
           <Grid sm={12}>
             <Box>
+              <br />
+              <br />
               <Typography>
-                The PCs are hired to retrieve an item from the Daedalus Robotics Lab, which is in lockdown after a fatality was reported. A number of employees are still in the facility.
+                The cargo ship <i>Agamemnon</i> is the oldest ship you’ve ever seen… 
+                you didn’t know any of this class were still in service. Rolling hatches, manual 
+                interfaces… how does The Company find parts for this thing?
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid sm={12}>
+            <Box>
+              <br />
+              <br />
+              <Typography display="inline">
+                <i>Claws Out</i> is a pamphlet module compatible with the Mothership RPG. It contains descriptions of
+                events that occur onboard the last voyage of the cargo ship <i>Agamemnon</i>, seven NPCs &nbsp; &nbsp;
+              </Typography>
+              <Box 
+                display="inline"
+                component="img"
+                sx={{ 
+                  height: 30,
+                  maxWidth: 1
+                }}
+                src={moduleLogo}
+              ></Box>
+                <br />
+                <br />
+              <Typography>
+                ... and one cat.
               </Typography>
             </Box>
           </Grid>
