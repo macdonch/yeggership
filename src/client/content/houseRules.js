@@ -166,7 +166,8 @@ const HouseRules = () => {
             <br />
             <Typography>
                 We have removed 'COWARD', 'NIGHTMARES' and 'CATATONIC' from the table, made the first
-                few entries a bit more innocuous, and reordered some others.
+                few entries a bit more innocuous, and reordered some others. The Mothership PSG v1.1 
+                made some modifications to the Panic Table that we have not considered yet for this table.
             </Typography>
           </Grid>
           <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex'} }}>

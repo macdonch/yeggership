@@ -34,11 +34,11 @@ const Home = () => {
               module <i>Nietzsche's Demon</i>.
               <br />
               <br />
-              <i>Claws Out</i> has been submitted to Tuesday Knight Games for approval. <i>Nietzsche's Demon</i> is being edited, 
-              and waiting for some art work.
+              <i>Claws Out</i> has been <s>submitted to Tuesday Knight Games for approval</s> has been approved by Tuesday Knight Games! <i>Nietzsche's Demon</i> is being edited, 
+              and waiting for some art work, but has also been submitted for approval.
               <br />
               <br />
-              Both modules will be launched via Kickstarter, then available from DriveThruRPG.
+              Both modules will be launched via a Kickstarter, then will be available from DriveThruRPG. The primary reason for the kickstarter will be to fund more art.
             </Typography>
           </Grid>
 
