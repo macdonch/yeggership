@@ -22,7 +22,7 @@ const GetPages = () => {
         {displayText: 'PC Gen', key: 'pcgen', path: '/charactergenerator'},
         {displayText: 'PC Sheet', key: 'charactersheet', path: '/fillablecharacter'},
         {displayText: 'Resources', key: 'resources', path: '/resources'},
-        {displayText: 'Hall Of Fame', key: 'charactergallery', path: '/charactergallery'},
+        {displayText: 'HR', key: 'charactergallery', path: '/charactergallery'},
     ];
     return pages;
 }

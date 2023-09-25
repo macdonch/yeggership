@@ -9,7 +9,7 @@ import ClawsOut from '../content/clawsOut';
 
 const GetResources = () => {
     const resources = [
-        {displayText: 'Home', key: 'resourcesHome'},
+        {displayText: 'Landing Zone', key: 'resourcesHome'},
         {displayText: 'Campaign Setting', key: 'faustus'},
         {displayText: 'House Rules', key: 'houserules'},
         {displayText: 'Hyperspace', key: 'hyperspace'},

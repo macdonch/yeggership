@@ -5,6 +5,7 @@ import Resources from "./client/pages/resources";
 import CharacterGallery from "./client/pages/charactergallery";
 import CharacterGenerator from "./client/pages/charactergenerator"
 import FillableCharacter from "./client/pages/fillablecharacter"
+import ClawsOut from "./client/content/clawsOut"
 import Container from '@mui/material/Container';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
@@ -48,6 +49,7 @@ class App extends React.Component {
                 <Route path={"/fillablecharacter"} element={<FillableCharacter />} />
                 <Route path={"/resources"} element={<Resources />} />
                 <Route path={"/charactergallery"} element={<CharacterGallery />} />
+                <Route exact path={"/clawsout"} element={<ClawsOut />} />
               </Routes>
           </Container>
         </ThemeProvider>

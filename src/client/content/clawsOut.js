@@ -15,7 +15,8 @@ const ClawsOut = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/clawsout/';
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
- const images = [];
+  const pawPrint = gcsFolderUrl + 'PawPrint.png';
+  const images = [];
 
   return (
     <Box>
@@ -77,7 +78,7 @@ const ClawsOut = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Claws Out</i> is a pamphlet module compatible with the Mothership RPG. It contains descriptions of
+                <i>Claws Out</i> is a pamphlet module compatible with the Mothership RPG&trade;. It contains descriptions of
                 events that occur onboard the last voyage of the cargo ship <i>Agamemnon</i>, seven NPCs &nbsp; &nbsp;
               </Typography>
               <Box 
@@ -87,7 +88,7 @@ const ClawsOut = () => {
                   height: 30,
                   maxWidth: 1
                 }}
-                src={moduleLogo}
+                src={pawPrint}
               ></Box>
                 <br />
                 <br />

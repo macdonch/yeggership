@@ -4,7 +4,7 @@ import CharactersHome from '../content/charactersHome';
 
 const GetCharacters = () => {
     const resources = [
-        {displayText: 'Home', key: 'charactersHome'},
+        {displayText: 'Directory', key: 'charactersHome'},
         {displayText: 'Old Ben', key: 'oldBen'},
         {displayText: 'Rutger', key: 'rutger'},
     ]

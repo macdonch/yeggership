@@ -81,7 +81,7 @@ const Home = () => {
               &nbsp; page contains a campaign setting, and material we created for our own play sessions of published modules. 
               The&nbsp;
               <Link display="inline" underline="hover" href="./charactergallery">
-                HALL OF FAME
+                HR
               </Link>
               &nbsp; contains memorable characters we have encountered. Feel free to use them as NPCs in your own sessions.
             </Typography>
