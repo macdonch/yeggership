@@ -4,17 +4,16 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Mothership1eLogo from '../../assets/1eLogoWebsite.png';
 
-const ClawsOut = () => {
+const NietzschesDemon = () => {
 
   const module = {
     driveThruUrl: 'https://preview.drivethrurpg.com/en/product/370801/mothership-piece-by-piece',
-    title: 'Claws Out',
-    type: 'pamphlet module'
+    title: "Nietzsche's Demon",
+    type: 'module'
   };
-  const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/clawsout/';
-  const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
-  const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
-  const pawPrint = gcsFolderUrl + 'PawPrint.png';
+  const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/nietzschesdemon/';
+  const downloadUrl = gcsFolderUrl + 'NietzschesDemon.zip';
+  const moduleLogo = gcsFolderUrl + 'NietzschesDemonLogo.jpg';
   const images = [];
 
   return (
@@ -34,13 +33,11 @@ const ClawsOut = () => {
             <Grid sm={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"}>
-                  CLAWS OUT
+                  Nietzsche's Demon
                 </Typography>
                 <Typography textAlign={"center"}>
                   <br />
-                  <i>Losing one passenger may be regarded as misfortune...</i>
-                  <br />
-                  <i>losing two looks like carelessness.</i>
+                  <i>Here we go again.</i>
                   <br />
                   <br />
                   Written By Charles Macdonald<br />
@@ -51,6 +48,7 @@ const ClawsOut = () => {
               </Box>
             </Grid>
             <Grid sm={12} textAlign={"center"}>
+              {/*
               <Box 
                 component="img"
                 sx={{ 
@@ -59,6 +57,8 @@ const ClawsOut = () => {
                 }}
                 src={Mothership1eLogo}
               ></Box>
+              */}
+              *** Approval Pending ***
             </Grid>
           </Grid>
           <Grid sm={12}>
@@ -66,9 +66,17 @@ const ClawsOut = () => {
               <br />
               <br />
               <Typography>
-                The cargo ship <i>Agamemnon</i> is the oldest ship you’ve ever seen… 
-                you didn’t know any of this class were still in service. Rolling hatches, manual 
-                interfaces… how does The Company find parts for this thing?
+                Hyperspace travel is… weird.
+                <br />
+                <br />
+                Old Ben will tell you that things like this didn’t happen in the old days, before the FTL
+                drives. Traveling through hyperspace is just… unnatural. The universe was already
+                weird enough and FTL might just be making it, well, weirder.
+                <br />
+                <br />
+                Join the passengers and crew of the cargo ship <i>Pharaon</i> and see just what can go
+                wrong in hyperspace. If you survive, you will have a great story… but will anyone
+                believe it?
               </Typography>
             </Box>
           </Grid>
@@ -77,32 +85,27 @@ const ClawsOut = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Claws Out</i> is a pamphlet module compatible with the Mothership RPG&trade;. It contains descriptions of
-                events that occur onboard the last voyage of the cargo ship <i>Agamemnon</i>, seven NPCs &nbsp; &nbsp;
-              </Typography>
-              <Box 
-                display="inline"
-                component="img"
-                sx={{ 
-                  height: 30,
-                  maxWidth: 1
-                }}
-                src={pawPrint}
-              ></Box>
-                <br />
-                <br />
-              <Typography>
-                ... and one cat.
+                <i>Nietzsche's Demon</i> is a 48 page module{/* compatible with the Mothership RPG&trade;*/}. It contains:
+                <ul>
+                  <li>Descriptions and stats for 8 NPCs.</li>
+                  <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
+                  <li>A detailed timeline of events, structured in five acts.</li>
+                  <li>Detailed explanations of several module-specific mechanics.</li>
+                  <li>Detailed mechanics and descriptions for the monster.</li>
+                  <li>Suggestions on how to handle common player actions, and how to incorporate character skills in to gameplay.</li>
+                  <li>An optional campaign setting, including a sector map, and brief desriptions of several systems.</li>
+                  <li>Contracts for Teamsters, Androids, and Scientists, and Travel Orders for Marines.</li>
+                </ul>
               </Typography>
             </Box>
           </Grid>
           <Grid sm={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
-              <br />
-              <i>Claws Out</i> will be launched via Kickstarter in Q4 2023.
+              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q4 2023.
             </Typography>
           </Grid>
+          {/*
           <Grid sm={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
@@ -115,8 +118,9 @@ const ClawsOut = () => {
               &nbsp; or contact contact@tuesdayknightgames.com.
             </Typography>
           </Grid>
+          */}
         </Grid>
       </Box>
   );
 }
-export default ClawsOut; 
+export default NietzschesDemon; 
