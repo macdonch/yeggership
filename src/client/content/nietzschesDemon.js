@@ -19,7 +19,7 @@ const NietzschesDemon = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={3} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={3} sx={{ display: { xs: 'flex', scrollMarginInlineEnd: 'flex'} }}>
             <Box 
               component="img"
               sx={{ 
@@ -29,8 +29,8 @@ const NietzschesDemon = () => {
               src={moduleLogo}
             ></Box>
           </Grid>
-          <Grid sm={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
-            <Grid sm={12}>
+          <Grid xs={12} sm={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
+            <Grid xs={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"}>
                   Nietzsche's Demon
@@ -47,7 +47,7 @@ const NietzschesDemon = () => {
                 <br />
               </Box>
             </Grid>
-            <Grid sm={12} textAlign={"center"}>
+            <Grid xs={12} textAlign={"center"}>
               {/*
               <Box 
                 component="img"
@@ -61,7 +61,7 @@ const NietzschesDemon = () => {
               *** Approval Pending ***
             </Grid>
           </Grid>
-          <Grid sm={12}>
+          <Grid xs={12}>
             <Box>
               <br />
               <br />
@@ -80,7 +80,7 @@ const NietzschesDemon = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12}>
+          <Grid xs={12}>
             <Box>
               <br />
               <br />
@@ -88,7 +88,7 @@ const NietzschesDemon = () => {
                 <i>Nietzsche's Demon</i> is a 48 page module{/* compatible with the Mothership RPG&trade;*/}. It contains:
                 <ul>
                   <li>Descriptions and stats for 8 NPCs.</li>
-                  <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
+                  <li>A ship design for a xsall freighter, the <i>Pharaon</i>.</li>
                   <li>A detailed timeline of events, structured in five acts.</li>
                   <li>Detailed explanations of several module-specific mechanics.</li>
                   <li>Detailed mechanics and descriptions for the monster.</li>
@@ -99,14 +99,14 @@ const NietzschesDemon = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12} sx={{ display: 'block' }}>
+          <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
               <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q4 2023.
             </Typography>
           </Grid>
           {/*
-          <Grid sm={12} sx={{ display: 'block' }}>
+          <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
               <br />

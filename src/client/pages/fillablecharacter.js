@@ -355,7 +355,7 @@ const FillableCharacter = () => {
   return (
     <Box>
       <Box sx={{ display: { xs: 'block', sm: 'none'} }}>
-        <Typography>This page requires a horizontal resolution of at least 600 pixels to render properly.</Typography>
+        <Typography>The webmaster hates phones!<br />For now, this page requires a horizontal resolution of at least 600 pixels to render properly.</Typography>
       </Box>
 
       <Box sx={{ display: { xs: 'none', sm: 'block'} }}>

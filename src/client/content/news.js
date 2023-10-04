@@ -10,26 +10,19 @@ const News = () => {
   return (
     <Box>
       <Grid container rowSpacing={1} alignItems="top">
-        <Grid sm={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
+        <Grid xs={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
           <Typography variant='h5'>
             News
           </Typography>
         </Grid>
         <Box>
-          <Grid container rowSpacing={1} alignItems="top">
+          <Grid container rowSpacing={2} alignItems="top">
             {newsJson.reverse().map(({date, title, text}) => (
-              <Box key={date + 'box'}>
-                <Grid key={title + 'title'} sm={12} sx={{ display: { sm: 'block'} }}>
+                <Grid key={title + 'title'} xs={12}>
                   <Typography variant='h6'>{title}</Typography>
-                </Grid>
-                <Grid key={text + 'text'} sm={12} sx={{ display: { sm: 'block'} }}>
                   <Typography>{text}</Typography>
-                </Grid>
-                <Grid key={date + 'date'} sm={12} sx={{ display: { sm: 'block'} }}>
                   <Typography variant="caption text">{date}</Typography>
                 </Grid>
-                <br />
-              </Box>
             ))}
           </Grid>
         </Box>

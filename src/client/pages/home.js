@@ -16,30 +16,38 @@ const Home = () => {
 
   return (
     <Box>
-      <Box sx={{ display: { xs: 'block', sm: 'none'} }}>
-        <Typography>This page requires a horizontal resolution of at least 600 pixels to render properly.</Typography>
-      </Box>
-      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        <Grid container rowSpacing={1} columnSpacing={2} alignItems="top">
+      <Box sx={{ display: { xs: 'block', sm: 'block' } }}>
+        <Grid container rowSpacing={2} columnSpacing={2} alignItems="top">
           {/* Welcome */}
           <Grid xs={12}>
             <Typography>
               Welcome to YEGGERSHIP!
+            </Typography>
+          </Grid>
+          <Grid xs={12} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Typography>
               Try out our PC Generator at &nbsp;
               <Link display="inline" underline="hover" href="./charactergenerator">
                 PC GEN
               </Link>
               .
-              <br />
-              <br />
+              </Typography>
+          </Grid>
+          <Grid xs={12} sx={{ display: { xs: 'block', sm: 'none'} }}>
+            <Typography>
+              Most of our content will not render on screens with a horizonal resolution below 600px, but we're working on it.
+            </Typography>
+          </Grid>
+          <Grid xs={12}>
+            <Typography>
               Someday soon we will launch a Kickstarter to publish some 3pp modules.
             </Typography>
             <br />
           </Grid>
-          <Grid sm={12} md={3}>
+          <Grid xs={12} md={3}>
             {News()}
           </Grid>
-          <Grid sm={12} md={9}>
+          <Grid xs={12} md={9}>
             <Box>
               <Grid container rowSpacing={1} alignItems="top">
                 {/* Products */}
@@ -101,37 +109,37 @@ const Home = () => {
               </Grid>
             </Box>
           </Grid>
-          <Grid sm={12} md={3}>
+          <Grid xs={12} md={3}>
             {/* Contact */}
             <Grid xs={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
               <Typography variant="h5">Contact</Typography>
             </Grid>
-            <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+            <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>Discord: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://discordapp.com/users/458484150828269578" sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Link underline="hover" target="_blank" rel="noopener" href="https://discordapp.com/users/458484150828269578" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 leibniz_2013
               </Link>
             </Grid>
-            <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+            <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>GitHub: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://github.com/macdonch" sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Link underline="hover" target="_blank" rel="noopener" href="https://github.com/macdonch" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 macdonch
               </Link>
             </Grid>
-            <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+            <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>RedBubble: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://www.redbubble.com/people/leibniz/shop" sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Link underline="hover" target="_blank" rel="noopener" href="https://www.redbubble.com/people/leibniz/shop" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 leibniz
               </Link>
             </Grid>
-            <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+            <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>Email: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="mailto:yeggership@gmail.com" sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Link underline="hover" target="_blank" rel="noopener" href="mailto:yeggership@gmail.com" sx={{ display: { xs: 'blcok', sm: 'block'} }}>
                 yeggership@gmail.com
               </Link>
             </Grid>
           </Grid>
-          <Grid sm={12} md={9}>
+          <Grid xs={12} md={9}>
             {/* About Us */}
             <Grid xs={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
               <Typography variant="h5">About Us</Typography>

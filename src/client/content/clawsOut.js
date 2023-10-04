@@ -20,7 +20,7 @@ const ClawsOut = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={3} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid xs={3} sx={{ display: { xs: 'flex', xs: 'flex'} }}>
             <Box 
               component="img"
               sx={{ 
@@ -30,8 +30,8 @@ const ClawsOut = () => {
               src={moduleLogo}
             ></Box>
           </Grid>
-          <Grid sm={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
-            <Grid sm={12}>
+          <Grid xs={9} sx={{ display: { xs: 'block', xs: 'block'} }}>
+            <Grid xs={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"}>
                   CLAWS OUT
@@ -50,7 +50,7 @@ const ClawsOut = () => {
                 <br />
               </Box>
             </Grid>
-            <Grid sm={12} textAlign={"center"}>
+            <Grid xs={12} textAlign={"center"}>
               <Box 
                 component="img"
                 sx={{ 
@@ -61,7 +61,7 @@ const ClawsOut = () => {
               ></Box>
             </Grid>
           </Grid>
-          <Grid sm={12}>
+          <Grid xs={12}>
             <Box>
               <br />
               <br />
@@ -72,7 +72,7 @@ const ClawsOut = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12}>
+          <Grid xs={12}>
             <Box>
               <br />
               <br />
@@ -96,14 +96,14 @@ const ClawsOut = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid sm={12} sx={{ display: 'block' }}>
+          <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
               <br />
               <i>Claws Out</i> will be launched via Kickstarter in Q4 2023.
             </Typography>
           </Grid>
-          <Grid sm={12} sx={{ display: 'block' }}>
+          <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
               <br />
