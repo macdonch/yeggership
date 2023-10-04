@@ -35,7 +35,7 @@ const NietzschesDemon = () => {
                 <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
                   NIETZSCHE'S DEMON
                 </Typography>
-                <Typography variant="h2" textAlign={"center"} sx={{ display: { xs: 'block', sm: 'none'} }}>
+                <Typography variant="h3" textAlign={"center"} sx={{ display: { xs: 'block', sm: 'none'} }}>
                   NIETZSCHE'S<br />DEMON
                 </Typography>
                 <Typography textAlign={"center"}>
