@@ -32,8 +32,11 @@ const NietzschesDemon = () => {
           <Grid xs={12} sm={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <Grid xs={12}>
               <Box>
-                <Typography variant="h1" textAlign={"center"}>
-                  Nietzsche's Demon
+                <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  NIETZSCHE'S DEMON
+                </Typography>
+                <Typography variant="h2" textAlign={"center"} sx={{ display: { xs: 'block', sm: 'none'} }}>
+                  NIETZSCHE'S<br />DEMON
                 </Typography>
                 <Typography textAlign={"center"}>
                   <br />

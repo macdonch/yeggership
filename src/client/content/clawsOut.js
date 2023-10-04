@@ -33,7 +33,10 @@ const ClawsOut = () => {
           <Grid xs={9} sx={{ display: { xs: 'block', xs: 'block'} }}>
             <Grid xs={12}>
               <Box>
-                <Typography variant="h1" textAlign={"center"}>
+                <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  CLAWS OUT
+                </Typography>
+                <Typography variant="h2" textAlign={"center"} sx={{ display: { xs: 'block', sm: 'none'} }}>
                   CLAWS OUT
                 </Typography>
                 <Typography textAlign={"center"}>
@@ -50,12 +53,22 @@ const ClawsOut = () => {
                 <br />
               </Box>
             </Grid>
-            <Grid xs={12} textAlign={"center"}>
+            <Grid xs={12} textAlign={"center"}  sx={{ display: { xs: 'none', sm: 'block'} }}>
               <Box 
                 component="img"
                 sx={{ 
-                  height: 1,
-                  maxWidth: 0.5
+                  maxWidth: 0.5,
+                  objectFit: "contain"
+                }}
+                src={Mothership1eLogo}
+              ></Box>
+            </Grid>
+            <Grid xs={12} textAlign={"center"}  sx={{ display: { xs: 'block', sm: 'none'} }}>
+              <Box 
+                component="img"
+                sx={{ 
+                  maxWidth: 1,
+                  objectFit: "contain"
                 }}
                 src={Mothership1eLogo}
               ></Box>
