@@ -5,7 +5,7 @@ import FaustusSector from '../content/faustusSector';
 import HouseRules from '../content/houseRules';
 import Terraforming from '../content/terraforming';
 import Hyperspace from '../content/hyperspace';
-import ClawsOut from '../content/clawsOut';
+import ClawsOutResources from '../content/clawsOutResources';
 
 const GetResources = () => {
     const resources = [
@@ -26,7 +26,7 @@ const GetResourceContent = (key) => {
     const content = {
         resourcesHome: ResourcesHome,
         faustus: FaustusSector,
-        clawsout: ClawsOut,
+        clawsout: ClawsOutResources,
         piecebypiece: PieceByPiece,
         terminaldelays: TerminalDelays,
         houserules: HouseRules,

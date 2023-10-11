@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Mothership1eLogo from '../../assets/1eLogoWebsite.png';
+import DownloadIcon from '@mui/icons-material/Download';
 
-const ClawsOut = () => {
-
+const ClawsOutResources = () => {
   const module = {
     driveThruUrl: 'https://preview.drivethrurpg.com/en/product/370801/mothership-piece-by-piece',
     title: 'Claws Out',
@@ -15,12 +15,29 @@ const ClawsOut = () => {
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
   const pawPrint = gcsFolderUrl + 'PawPrint.png';
-  const images = [];
+  const images = [
+    {
+      displayText: 'Agamemnon .pdf preview',
+      url: gcsFolderUrl + 'Freighter-Agamemnon.png'
+    },
+    {
+      displayText: 'Deck A',
+      url: gcsFolderUrl + 'agamemnonDeckA.png'
+    },
+    {
+      displayText: 'Deck B',
+      url: gcsFolderUrl + 'agamemnonDeckB.png'
+    },
+    {
+      displayText: 'Deck C',
+      url: gcsFolderUrl + 'agamemnonDeckC.png'
+    }
+  ];
 
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid xs={3} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
+          <Grid sm={3} sx={{ display: { xs: 'none', sm: 'flex'} }}>
             <Box 
               component="img"
               sx={{ 
@@ -30,13 +47,10 @@ const ClawsOut = () => {
               src={moduleLogo}
             ></Box>
           </Grid>
-          <Grid xs={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
-            <Grid xs={12}>
+          <Grid sm={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Grid sm={12}>
               <Box>
-                <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
-                  CLAWS OUT
-                </Typography>
-                <Typography variant="h2" textAlign={"center"} sx={{ display: { xs: 'block', sm: 'none'} }}>
+                <Typography variant="h1" textAlign={"center"}>
                   CLAWS OUT
                 </Typography>
                 <Typography textAlign={"center"}>
@@ -48,33 +62,23 @@ const ClawsOut = () => {
                   <br />
                   Written By Charles Macdonald<br />
                   Edited by Marcel Berridge
-                </Typography>
+                </Typography>  
                 <br />
                 <br />
               </Box>
             </Grid>
-            <Grid xs={12} textAlign={"center"}  sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Grid sm={12} textAlign={"center"}>
               <Box 
                 component="img"
                 sx={{ 
-                  maxWidth: 0.5,
-                  objectFit: "contain"
-                }}
-                src={Mothership1eLogo}
-              ></Box>
-            </Grid>
-            <Grid xs={12} textAlign={"center"}  sx={{ display: { xs: 'block', sm: 'none'} }}>
-              <Box 
-                component="img"
-                sx={{ 
-                  maxWidth: 1,
-                  objectFit: "contain"
-                }}
+                  height: 1,
+                  maxWidth: 0.5
+                }} 
                 src={Mothership1eLogo}
               ></Box>
             </Grid>
           </Grid>
-          <Grid xs={12}>
+          <Grid sm={12}>
             <Box>
               <br />
               <br />
@@ -85,7 +89,7 @@ const ClawsOut = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid xs={12}>
+          <Grid sm={12}>
             <Box>
               <br />
               <br />
@@ -109,27 +113,57 @@ const ClawsOut = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid xs={12} sx={{ display: 'block' }}>
+          <Grid sm={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
               <br />
               <i>Claws Out</i> will be launched via Kickstarter in Q4 2023.
             </Typography>
           </Grid>
-          <Grid xs={12} sx={{ display: 'block' }}>
-            <Typography>
-              <br />
-              <br />
-              Mothership RPG are trademarks of Tuesday Knight Games. For
-              additional information, visit &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
-                www.tuesdayknightgames.com
-              </Link>
-              &nbsp; or contact contact@tuesdayknightgames.com.
+          <Grid sm={12}>
+            <br />
+            <br />
+            <Typography variant="h5">
+              Additional Material
             </Typography>
           </Grid>
+          <Grid sm={12} sx={{ display: 'block' }}>
+            <Typography>
+              The module is set on the cargo ship <i>Agamemnon</i>, but a map is not provided. Wardens can make their own map, or can use the maps provided here.
+              They can be viewed below, or you can download them as a zip file. The zip files also provides deck plans without ventilation,
+              which makes the maps more readable.
+              < br />
+              < br />
+              <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
+                Download .zip {<DownloadIcon />}
+              </Link>
+            </Typography>
+            <br />
+          </Grid>
         </Grid>
+        <Box>
+          {images.map(({displayText, url}) => (
+            <Grid container rowSpacing={1} alignItems="top">
+                  <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                    <Typography>{displayText}</Typography>
+                  </Grid>
+                  <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                    <Box 
+                      component="img"
+                      sx={{ 
+                        height: 100,
+                        '&:hover': {
+                          height: 1,
+                          maxWidth: 0.75
+                        }
+                      }}
+                      src={url}
+                      ></Box>
+                  </Grid>
+            </Grid>
+          ))}
+        </Box>
       </Box>
   );
 }
-export default ClawsOut; 
+export default ClawsOutResources;

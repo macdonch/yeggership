@@ -3,6 +3,7 @@ import NavBar from './client/components/navBar';
 import Home from "./client/pages/home";
 import Resources from "./client/pages/resources";
 import CharacterGallery from "./client/pages/charactergallery";
+import Ships from "./client/pages/ships";
 import CharacterGenerator from "./client/pages/charactergenerator"
 import FillableCharacter from "./client/pages/fillablecharacter"
 import ClawsOut from "./client/content/clawsOut"
@@ -49,6 +50,7 @@ class App extends React.Component {
                 <Route path={"/fillablecharacter"} element={<FillableCharacter />} />
                 <Route path={"/resources"} element={<Resources />} />
                 <Route path={"/charactergallery"} element={<CharacterGallery />} />
+                <Route path={"/ships"} element={<Ships />} />
                 <Route path={"/clawsout"} element={<ClawsOut />} />
                 <Route path={"/nietzschesdemon"} element={<NietzschesDemon />} />
               </Routes>

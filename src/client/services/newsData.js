@@ -34,6 +34,16 @@ const GetNews = () => {
 				"date": "Sept 25, 2023",
 				"title": "Nietzsche's Demon Submitted",
 				"text": "Nietzsche's Demon has been submitted to TKG for approval."
+			},
+			{
+				"date": "Oct 10, 2023",
+				"title": "Ships!",
+				"text": "Added a Ships section, with one ship."
+			},
+			{
+				"date": "Oct 10, 2023",
+				"title": "Claws Out Resources",
+				"text": "Added a ship design for use with Claws Out."
 			}
 		]
     return newsJson;

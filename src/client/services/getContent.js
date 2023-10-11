@@ -23,6 +23,7 @@ const GetPages = () => {
         {displayText: 'PC Sheet', key: 'charactersheet', path: '/fillablecharacter'},
         {displayText: 'Resources', key: 'resources', path: '/resources'},
         {displayText: 'HR', key: 'charactergallery', path: '/charactergallery'},
+        {displayText: 'Ships', key: 'ships', path: '/ships'},
     ];
     return pages;
 }
