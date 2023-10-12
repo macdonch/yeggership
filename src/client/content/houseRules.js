@@ -194,7 +194,7 @@ const HouseRules = () => {
               </Table>
             </TableContainer>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
             <Box 
               component="img"
               sx={{ 
@@ -202,13 +202,14 @@ const HouseRules = () => {
               }}
               src={downloads.panicTable.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.panicTable.url} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.panicTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Panic Table {<DownloadIcon />}
             </Link>
           </Grid>
         </Grid>
         <Grid container rowSpacing={1} alignItems="top" columnSpacing={4}>
           <Grid sm={12}>
+            <br />
             <Typography variant='h4'>
               Talents
             </Typography>
@@ -219,7 +220,7 @@ const HouseRules = () => {
                 Some talents are specific to a character class.
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
             <TableContainer>
               <Table>
                 <TableHead>
@@ -247,7 +248,7 @@ const HouseRules = () => {
               </Table>
             </TableContainer>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'fkex', sm: 'flex', gap: '1rem' } }}>
             <Box 
               component="img"
               sx={{ 
@@ -255,7 +256,7 @@ const HouseRules = () => {
               }}
               src={downloads.talentsTable.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.talentsTable.url} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.talentsTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Talents Table {<DownloadIcon />}
             </Link>
           </Grid>

@@ -37,7 +37,7 @@ const ClawsOutResources = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={3} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={3} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
             <Box 
               component="img"
               sx={{ 
@@ -47,7 +47,7 @@ const ClawsOutResources = () => {
               src={moduleLogo}
             ></Box>
           </Grid>
-          <Grid sm={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <Grid sm={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"}>
@@ -143,11 +143,11 @@ const ClawsOutResources = () => {
         </Grid>
         <Box>
           {images.map(({displayText, url}) => (
-            <Grid container rowSpacing={1} alignItems="top">
-                  <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Grid container rowSpacing={1} columnSpacing={1} alignItems="top">
+                  <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'block', sm: 'block'} }}>
                     <Typography>{displayText}</Typography>
                   </Grid>
-                  <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
                     <Box 
                       component="img"
                       sx={{ 

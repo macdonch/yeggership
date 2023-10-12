@@ -7,7 +7,7 @@ const ResourcesHome = () => {
   return (
     <Box>
       <Grid container rowSpacing={1} alignItems="top">
-        <Grid sm={8} md={10} sx={{ display: 'block' }}>
+        <Grid xs={8} md={10} sx={{ display: 'block' }}>
             <Typography  sx={{ display: 'block' }}>
               This area of the site contains resources that we created for our play sessions, such as:
             </Typography>

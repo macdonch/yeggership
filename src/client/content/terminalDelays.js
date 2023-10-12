@@ -89,7 +89,7 @@ const TerminalDelays = () => {
             <Typography>
               <br />
                 I ran this module in a single session, as a 'prequel' with pre-generated characters that appeared as NPCs later 
-                in our campaign timeline. I used Audacity to splice the "hold" message with commercials from<i>Blade Runner</i> and Public Service 
+                in our campaign timeline. I used Audacity to splice the "hold" message with commercials from <i>Blade Runner</i> and Public Service 
                 Announcements from <i>Starship Troopers</i>. I also created a custom commerical for "AdrenoBoost". 
               
               <br />
@@ -108,12 +108,12 @@ const TerminalDelays = () => {
                 These can be viewed below, or you can download them as a zip file.
               
               <br />
-                <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
                   Download .zip {<DownloadIcon />}
                 </Link>
               
               <br />
-                <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
                   adrenoBoost Ad {<HeadphonesIcon />}
                 </Link>
               
@@ -122,18 +122,19 @@ const TerminalDelays = () => {
         </Grid>
         <Box>
           {images.map(({displayText, url}) => (
-            <Grid container rowSpacing={1} alignItems="top">
-              <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Grid container rowSpacing={1} columnSpacing={1} alignItems="top">
+              <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'block', sm: 'block'} }}>
                 <Typography>{displayText}</Typography>
               </Grid>
-              <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+              <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
                 <Box 
                   component="img"
                   sx={{ 
                     height: 100,
                     '&:hover': {
                       height: 1,
-                      maxWidth: 0.75
+                      maxWidth: 0.75,
+                      objectFit: "contain"
                     }
                   }}
                   src={url}

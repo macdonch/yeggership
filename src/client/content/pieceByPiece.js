@@ -62,7 +62,7 @@ const PieceByPiece = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
             <Box display="inline">
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
@@ -101,18 +101,19 @@ const PieceByPiece = () => {
         </Grid>
         <Box>
           {images.map(({displayText, url}) => (
-            <Grid container rowSpacing={1} alignItems="top">
-                  <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Grid container rowSpacing={1} columnSpacing={1} alignItems="top">
+                  <Grid key={displayText + 'title'} sm={3} md={3} sx={{ display: { xs: 'block', sm: 'block'} }}>
                     <Typography>{displayText}</Typography>
                   </Grid>
-                  <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'none', sm: 'block'} }}>
+                  <Grid key={displayText + 'url'} sm={9} md={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
                     <Box 
                       component="img"
                       sx={{ 
                         height: 100,
                         '&:hover': {
                           height: 1,
-                          maxWidth: 0.75
+                          maxWidth: 0.75,
+                          objectFit: "contain"
                         }
                       }}
                       src={url}

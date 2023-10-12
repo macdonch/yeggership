@@ -13,14 +13,14 @@ const TerminalDelays = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
             <Typography variant='h2'>
               THE FAUSTUS SECTOR
             </Typography>
           </Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={4} alignItems="top">
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <Typography>
                 The Faustus Sector is linked to Core systems by a stable Jump-3 path. The sector has recently been 
                 undergoing rapid development but is still sparsely populated beyond the Prospero system. New jump 
@@ -61,7 +61,7 @@ const TerminalDelays = () => {
                 Iago has been designated as a “Special Economic Zone”, which streamlines some regulatory oversight.
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <Typography>Faustus c. 2150</Typography>
             <Box 
               component="img"
@@ -70,7 +70,8 @@ const TerminalDelays = () => {
                 '&:hover': {
                   height: 720,
                   width: 960,
-                  maxWidth: 1
+                  maxWidth: 1,
+                  objectFit: "contain"
                 }
               }}
               src={faustus2150}
@@ -79,7 +80,7 @@ const TerminalDelays = () => {
         </Grid>
 
         <Grid container rowSpacing={1} columnSpacing={4} alignItems="top">
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <br />
             <Typography variant='h4'>
             Mephisto Way Station
@@ -130,7 +131,7 @@ const TerminalDelays = () => {
               
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <Typography>Faustus c. 2175</Typography>
             <Box 
               component="img"
@@ -139,7 +140,8 @@ const TerminalDelays = () => {
                 '&:hover': {
                   height: 720,
                   width: 960,
-                  maxWidth: 1
+                  maxWidth: 1,
+                  objectFit: "contain"
                 }
               }}
               src={faustus2175}

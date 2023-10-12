@@ -7,8 +7,8 @@ const CharactersHome = () => {
   return (
     <Box>
       <Grid container rowSpacing={1} alignItems="top">
-        <Grid sm={8} md={10} sx={{ display: { xs: 'none', sm: 'flex'} }}>
-            <Typography  sx={{ display: { xs: 'none', sm: 'block'} }}>
+        <Grid sm={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex'} }}>
+            <Typography  sx={{ display: { xs: 'block', sm: 'block'} }}>
                 A collection of characters with some unique features or backgrounds. Feel free to use them as NPCs.
             </Typography>
         </Grid>

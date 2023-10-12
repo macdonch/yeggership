@@ -15,15 +15,15 @@ const Agamemnon = () => {
 
   return (
     <Box>
-        <Grid container rowSpacing={2} alignItems="top">
+        <Grid container rowSpacing={2} columnSpacing={2} alignItems="top">
           <Grid xs={12}>
             <Typography variant='h2'>
-             The Agamemnon
+            The Agamemnon
             </Typography>
           </Grid>
           <Grid sx={12}>
             <Typography variant='h3'>
-             Class II Freighter
+            Class II Freighter
             </Typography>
           </Grid>
           <Grid xs={12}>
@@ -180,7 +180,7 @@ const Agamemnon = () => {
               src={deckC}
             ></Box>
           </Grid>
-          <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
+          <Grid sm={12} sx={{ display: { xs: 'flex', md: 'flex'} }}>
             <Typography>
               Maps and diagrams are available for download as a zip file.
               < br />

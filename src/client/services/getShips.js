@@ -4,7 +4,7 @@ import ShipsHome from '../content/shipsHome';
 const GetShips = () => {
     const resources = [
         {displayText: 'Registry', key: 'shipsHome'},
-        {displayText: 'Agamemnon', key: 'agamemnon'},
+        {displayText: 'Agamemnon', key: 'agamemnon'}
     ]
     return resources;
 }

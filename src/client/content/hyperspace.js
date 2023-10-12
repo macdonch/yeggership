@@ -66,7 +66,7 @@ const Hyperspace = () => {
                 </ol>             
               
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <br />
             <Typography sx={{ fontWeight: 'bold', textAlign: "center" }}>
               Figure 1 - Hyperspace Cone in Minkowski Space
@@ -118,7 +118,7 @@ const Hyperspace = () => {
                   </li>
                 </ol>             
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: { xs: 'none', sm: 'block'} }}>
+          <Grid sm={12} md={6} sx={{ display: { xs: 'block', sm: 'block'} }}>
             <br />
             <Typography sx={{ fontWeight: 'bold', textAlign: "center" }}>
               Figure 2 - Hyperspace Mapping
@@ -142,7 +142,7 @@ const Hyperspace = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex', gap: '1rem' } }}>
+        <Grid sm={12} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
             <Box 
               component="img"
               sx={{ 
@@ -150,7 +150,7 @@ const Hyperspace = () => {
               }}
               src={downloads.hyperspace.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.hyperspace.url} sx={{ display: { xs: 'none', sm: 'block'} }}>
+            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.hyperspace.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Hyperspace Mechanics{<DownloadIcon />}
             </Link>
           </Grid>

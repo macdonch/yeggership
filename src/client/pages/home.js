@@ -35,7 +35,7 @@ const Home = () => {
           </Grid>
           <Grid xs={12} sx={{ display: { xs: 'block', sm: 'none'} }}>
             <Typography>
-              Most of our content will not render on screens with a horizonal resolution below 600px, but we're working on it.
+              Some content will not render on screens with a horizonal resolution below 600px, but we're working on it.
             </Typography>
           </Grid>
           <Grid xs={12}>

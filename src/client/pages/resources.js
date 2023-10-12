@@ -34,11 +34,29 @@ const Resources = () => {
 
   return (
     <Box>
-      <Box sx={{ display: { xs: 'block', sm: 'none'} }}>
-        <Typography>The webmaster hates phones!<br />For now, this page requires a horizontal resolution of at least 600 pixels to render properly.</Typography>
+      <Box sx={{ display: { xs: 'block', md: 'none'} }}>
+        <Grid container rowSpacing={1} alignItems="top">
+          <Grid sm={12} md={3}>
+            {sideBar.map(({displayText, key}) => (
+              <Button
+                  key={key}
+                  id={key}
+                  edge="end"
+                  color="inherit"
+                  aria-label="mode"
+                  onClick={selectContent}
+              >
+                  <Typography key={key} name={key} sx={{mx: 1, fontWeight: getFontWeight(key)}}>{displayText}</Typography>
+              </Button>
+            ))}
+          </Grid>
+          <Grid sm={12} md={9}>
+              {currentContent}
+          </Grid>
+        </Grid>
       </Box>
 
-      <Box sx={{ display: { xs: 'none', sm: 'block'} }}>
+      <Box sx={{ display: { xs: 'none', md: 'block'} }}>
         <Grid container rowSpacing={1} alignItems="top">
             <Grid sm={12} md={3}>
                 {sideBar.map(({displayText, key}) => (
@@ -56,7 +74,7 @@ const Resources = () => {
                     </Grid>
                 ))}
             </Grid>
-            <Grid sm={12} md={9}>
+            <Grid xs={12} md={9}>
                 {currentContent}
             </Grid>
         </Grid>

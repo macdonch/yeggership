@@ -1,5 +1,5 @@
 import { red } from '@mui/material/colors';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes  } from '@mui/material/styles';
 
 export function getTheme(mode) {
     let palette;
@@ -49,6 +49,6 @@ export function getTheme(mode) {
       ].join(',')
     };
 
-    const Theme = createTheme({palette: palette, typography: typography});
+    const Theme = responsiveFontSizes(createTheme({palette: palette, typography: typography}));
     return Theme;
 }

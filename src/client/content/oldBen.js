@@ -9,14 +9,14 @@ const OldBen = () => {
   return (
     <Box>
         <Grid container rowSpacing={1} alignItems="top">
-          <Grid sm={12} sx={{ display: 'flex' }}>
+          <Grid xs={12} sx={{ display: 'flex' }}>
             <Typography variant='h2'>
               OLD BEN
             </Typography>
           </Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={4} alignItems="top">
-          <Grid sm={12} md={6} sx={{ display: 'block' }}>
+          <Grid xs={12} md={6} sx={{ display: 'block' }}>
             <Typography>
               'Old Ben' has been a space trucker since before FTL and will tell  
               you stories about it whether you want to hear them or not.
@@ -30,7 +30,7 @@ const OldBen = () => {
               'Old Ben' was created as a PC by Charles Allen.
             </Typography>
           </Grid>
-          <Grid sm={12} md={6} sx={{ display: 'block', textAlign: "center" }}>
+          <Grid xs={12} md={6} sx={{ display: 'block', textAlign: "center" }}>
             <Typography>"Old Ben"</Typography>
             <Box 
               component="img"
