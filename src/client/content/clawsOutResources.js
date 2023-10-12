@@ -72,7 +72,8 @@ const ClawsOutResources = () => {
                 component="img"
                 sx={{ 
                   height: 1,
-                  maxWidth: 0.5
+                  maxWidth: 0.5,
+                  objectFit: "contain"
                 }} 
                 src={Mothership1eLogo}
               ></Box>
@@ -102,7 +103,8 @@ const ClawsOutResources = () => {
                 component="img"
                 sx={{ 
                   height: 30,
-                  maxWidth: 1
+                  maxWidth: 1,
+                  objectFit: "contain"
                 }}
                 src={pawPrint}
               ></Box>
@@ -154,7 +156,8 @@ const ClawsOutResources = () => {
                         height: 100,
                         '&:hover': {
                           height: 1,
-                          maxWidth: 0.75
+                          maxWidth: 0.75,
+                          objectFit: "contain"
                         }
                       }}
                       src={url}
@@ -163,6 +166,18 @@ const ClawsOutResources = () => {
             </Grid>
           ))}
         </Box>
+        <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography>
+              <br />
+              <br />
+              Mothership RPG are trademarks of Tuesday Knight Games. For
+              additional information, visit &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+                www.tuesdayknightgames.com
+              </Link>
+              &nbsp; or contact contact@tuesdayknightgames.com.
+            </Typography>
+          </Grid>
       </Box>
   );
 }
