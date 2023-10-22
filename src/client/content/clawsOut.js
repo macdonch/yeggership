@@ -113,7 +113,7 @@ const ClawsOut = () => {
             <Typography>
               <br />
               <br />
-              <i>Claws Out</i> will be launched via Kickstarter in Q4 2023.
+              <i>Claws Out</i> will be available on DriveThruRPG in Q4 2023.
             </Typography>
           </Grid>
           <Grid xs={12} sx={{ display: 'block' }}>
