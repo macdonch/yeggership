@@ -212,7 +212,7 @@ const ClawsOutResources = () => {
         </Grid>
         <Grid sm={12} sx={{ display: 'block' }}>
           <Typography>
-            Blank ship maps, NPC portrais. The zip files also provides deck plans without ventilation,here
+            Blank ship maps, NPC portraits. The zip files also provides deck plans without ventilation,
             which makes the maps more readable.
             < br />
             < br />
