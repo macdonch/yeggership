@@ -58,6 +58,14 @@ const TerminalDelays = () => {
     {
       displayText:'Mlynnik Token',
       url: gcsFolderUrl + 'mlynnik.png',
+    },
+    {
+      displayText:'Kara Token',
+      url: gcsFolderUrl + 'kara.png',
+    },
+    {
+      displayText:'Kat Token',
+      url: gcsFolderUrl + 'kat.png',
     }
   ];
 
