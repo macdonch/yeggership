@@ -38,7 +38,7 @@ const Ypsilon14 = () => {
     },
     {
       displayText: 'Dana Flores',
-      url: gcsFolderUrl + 'data.png'
+      url: gcsFolderUrl + 'dana.png'
     },
     {
       displayText: 'Dr. Ethan Giovanni',
