@@ -54,6 +54,11 @@ const GetNews = () => {
 				"date": "Oct 10, 2023",
 				"title": "Claws Out Supplement",
 				"text": "Added a zine to supplement Claws Out."
+			},
+			{
+				"date": "Oct 10, 2023",
+				"title": "Ypsilon 14 Resources",
+				"text": "Added neat stuff created by Jay_dont for Ypsilon 14."
 			}
 		]
     return newsJson;

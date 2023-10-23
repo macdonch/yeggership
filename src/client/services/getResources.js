@@ -6,6 +6,7 @@ import HouseRules from '../content/houseRules';
 import Terraforming from '../content/terraforming';
 import Hyperspace from '../content/hyperspace';
 import ClawsOutResources from '../content/clawsOutResources';
+import Ypsilon14 from '../content/ypsilon14'
 
 const GetResources = () => {
     const resources = [
@@ -16,7 +17,8 @@ const GetResources = () => {
         {displayText: 'Terraforming', key: 'terraforming'},
         {displayText: 'Claws Out', key: 'clawsout'},
         {displayText: 'Piece By Piece', key: 'piecebypiece'},
-        {displayText: 'Terminal Delays', key: 'terminaldelays'}
+        {displayText: 'Terminal Delays', key: 'terminaldelays'},
+        {displayText: 'Ypsilon 14', key: 'ypsilon14'}
     ]
     return resources;
 }
@@ -31,7 +33,8 @@ const GetResourceContent = (key) => {
         terminaldelays: TerminalDelays,
         houserules: HouseRules,
         terraforming: Terraforming,
-        hyperspace: Hyperspace
+        hyperspace: Hyperspace,
+        ypsilon14: Ypsilon14
     }
     return content[key];
 }
