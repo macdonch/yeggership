@@ -49,7 +49,7 @@ const GetNews = () => {
 				"date": "Oct 10, 2023",
 				"title": "Zine Views",
 				"text": "Added instructions for viewing zines."
-			}
+			},
 			{
 				"date": "Oct 10, 2023",
 				"title": "Claws Out Supplement",
