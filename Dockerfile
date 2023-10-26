@@ -25,5 +25,5 @@ run pwd
 
 FROM nginx:mainline-alpine-slim
 EXPOSE 80
-COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+EXPOSE 443
 COPY --from=build /home/node/app/build /usr/share/nginx/html
