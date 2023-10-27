@@ -46,19 +46,29 @@ const GetNews = () => {
 				"text": "Added a ship design for use with Claws Out."
 			},
 			{
-				"date": "Oct 10, 2023",
+				"date": "Oct 22, 2023",
 				"title": "Zine Views",
 				"text": "Added instructions for viewing zines."
 			},
 			{
-				"date": "Oct 10, 2023",
+				"date": "Oct 22, 2023",
 				"title": "Claws Out Supplement",
 				"text": "Added a zine to supplement Claws Out."
 			},
 			{
-				"date": "Oct 10, 2023",
+				"date": "Oct 23, 2023",
 				"title": "Ypsilon 14 Resources",
 				"text": "Added neat stuff created by Jay_dont for Ypsilon 14."
+			},
+			{
+				"date": "Oct 26, 2023",
+				"title": "SSL Enabled",
+				"text": "Enabled SSL for the site."
+			},
+			{
+				"date": "Oct 26, 2023",
+				"title": "Updated Terminal Delays",
+				"text": "Updated Terminal Delays character portraits."
 			}
 		]
     return newsJson;
