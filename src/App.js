@@ -32,7 +32,7 @@ class App extends React.Component {
       theme = 'dark'
     }
     this.setState({ theme });
-      }
+  }
 
   render() {
     const state = this.state;
