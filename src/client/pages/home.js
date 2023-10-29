@@ -39,8 +39,14 @@ const Home = () => {
             </Typography>
           </Grid>
           <Grid xs={12}>
-            <Typography>
-              Someday soon we will launch a Kickstarter to publish some 3pp modules.
+            <Typography display="inline">
+              <i>Claws Out</i> is now available at &nbsp;
+                <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
+                    DriveThruRPG!
+              </Link>
+              <br />
+              <br />      
+              Someday soon we will launch a Kickstarter for Neitzsche's  Demon.
             </Typography>
             <br />
           </Grid>

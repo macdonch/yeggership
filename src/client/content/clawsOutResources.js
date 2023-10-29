@@ -7,7 +7,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 const ClawsOutResources = () => {
   const module = {
-    driveThruUrl: 'https://preview.drivethrurpg.com/en/product/370801/mothership-piece-by-piece',
+    driveThruUrl: 'https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size',
     title: 'Claws Out',
     type: 'pamphlet module'
   };
@@ -122,13 +122,14 @@ const ClawsOutResources = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid sm={12}>
+        <Grid xs={12}>
           <Box>
             <br />
             <br />
             <Typography display="inline">
-              <i>Claws Out</i> is a pamphlet module compatible with the Mothership RPG&trade;. It contains descriptions of
-              events that occur onboard the last voyage of the cargo ship <i>Agamemnon</i>, seven NPCs &nbsp; &nbsp;
+            <i>{module.title}</i> is a pamphlet module compatible with the Mothership RPG&trade;
+            . It contains descriptions of
+            events that occur onboard the cargo ship <i>Agamemnon</i>, seven NPCs &nbsp; &nbsp;
             </Typography>
             <Box 
               display="inline"
@@ -147,11 +148,15 @@ const ClawsOutResources = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid sm={12} sx={{ display: 'block' }}>
-          <Typography>
+        <Grid xs={12} sx={{ display: 'block' }}>
+          <Typography display="inline">
             <br />
             <br />
-            <i>Claws Out</i> will be available on DriveThruRPG in Q4 2023.
+            <i>{module.title}</i> is now availabe for  purchase at &nbsp;
+            <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+              DriveThruRPG
+            </Link>
+            .
           </Typography>
         </Grid>
       </Grid>
@@ -165,7 +170,7 @@ const ClawsOutResources = () => {
         </Grid>
         <Grid sm={12} sx={{ display: 'block' }}>
           <Typography>
-            The module is describes the cargo ship <i>Agamemnon</i> and a monster, but a map is not provideddoes not provide a shpi map, or monster stats. Wardens can make their own, or can use the reource provided in the zine supplement provided in here.
+            The module gives a general description of the cargo ship <i>Agamemnon</i> and a monster, but does not provide a map, or monster stats. Wardens can make their own, or can use the resources provided in the zine supplement provided in here.
             The interior spreads can be viewed below, and the zine can be downloaded as a pdf in few formats. The zine is also included in the .zip file in the Additional Material section.
             < br />
             < br />
