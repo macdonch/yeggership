@@ -83,7 +83,7 @@ const ResourcesHome = () => {
           </Typography>
           <Typography>
               If the pdf is a collection of 5.5" x 8.5" pages, select "Booklet" when printing, then check the preview.
-              Ensure you are priting on both sides of the paper.
+              Ensure you are printing on both sides of the paper.
               This should print two pages of the pdf on each 8.5" x 11" sheet, that you can then fold in half to make a booklet.
           </Typography>
           <br />
