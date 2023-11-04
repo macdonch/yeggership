@@ -15,8 +15,8 @@ const ClawsOutResources = () => {
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
   const pawPrint = gcsFolderUrl + 'PawPrint.png';
-  const zineNoCover = gcsFolderUrl + 'ClawsOutSupplement-NoCover.pdf';
-  const zinePrintFriendly = gcsFolderUrl + 'ClawsOutSupplement-PrintFriendly.pdf';
+  const zineNoCover = gcsFolderUrl + 'ClawsOut-Supplement-NoCover.pdf';
+  const zinePrintFriendly = gcsFolderUrl + 'ClawsOut-Supplement-PrintFriendly.pdf';
   const zineSpreads = [
     {
       displayText: 'Zine Spread 1',
