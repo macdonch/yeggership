@@ -69,6 +69,11 @@ const GetNews = () => {
 				"date": "Oct 26, 2023",
 				"title": "Updated Terminal Delays",
 				"text": "Updated Terminal Delays character portraits."
+			},
+			{
+				"date": "Jan 24, 2024",
+				"title": "Nietzsche's Demon Art - Round 1 Done!",
+				"text": "The first batch of art for Nietzsche's Demon is complete! Will some samples later."
 			}
 		]
     return newsJson;
