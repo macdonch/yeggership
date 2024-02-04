@@ -71,9 +71,19 @@ const GetNews = () => {
 				"text": "Updated Terminal Delays character portraits."
 			},
 			{
+				"date": "Nov 10, 2023",
+				"title": "Nietzsche's Demon Approved",
+				"text": "Nietzsche's Demon has been approved by TKG!"
+			},
+			{
 				"date": "Jan 24, 2024",
 				"title": "Nietzsche's Demon Art - Round 1 Done!",
-				"text": "The first batch of art for Nietzsche's Demon is complete! Will some samples later."
+				"text": "The first batch of art for Nietzsche's Demon is complete!"
+			},
+			{
+				"date": "Jan 24, 2024",
+				"title": "Nietzsche's Demon Art Samples Posted",
+				"text": "Nietzsche's Demon art samples have been uploaded to the home page."
 			}
 		]
     return newsJson;

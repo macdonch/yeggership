@@ -14,6 +14,7 @@ const NietzschesDemon = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/nietzschesdemon/';
   const downloadUrl = gcsFolderUrl + 'NietzschesDemon.zip';
   const moduleLogo = gcsFolderUrl + 'NietzschesDemonLogo.jpg';
+  const collage = gcsFolderUrl + 'NietzscheCollageSmall.jpg';
   const images = [];
 
   return (
@@ -51,7 +52,7 @@ const NietzschesDemon = () => {
               </Box>
             </Grid>
             <Grid xs={12} textAlign={"center"}>
-              {/*
+              {
               <Box 
                 component="img"
                 sx={{ 
@@ -60,8 +61,7 @@ const NietzschesDemon = () => {
                 }}
                 src={Mothership1eLogo}
               ></Box>
-              */}
-              *** Approval Pending ***
+              }
             </Grid>
           </Grid>
           <Grid xs={12}>
@@ -88,10 +88,10 @@ const NietzschesDemon = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Nietzsche's Demon</i> is a 48 page module{/* compatible with the Mothership RPG&trade;*/}. It contains:
+                <i>Nietzsche's Demon</i> is a 48 page module compatible with the Mothership RPG&trade;. It contains:
                 <ul>
                   <li>Descriptions and stats for 8 NPCs.</li>
-                  <li>A ship design for a xsall freighter, the <i>Pharaon</i>.</li>
+                  <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
                   <li>A detailed timeline of events, structured in five acts.</li>
                   <li>Detailed explanations of several module-specific mechanics.</li>
                   <li>Detailed mechanics and descriptions for the monster.</li>
@@ -105,10 +105,29 @@ const NietzschesDemon = () => {
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
-              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q4 2023.
+              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q2 2024.
             </Typography>
           </Grid>
-          {/*
+          <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography>
+              <br />
+              Below is a sample of some the art found in <i>Nietzsche's Demon</i>, by&nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
+                Dark and Stormy Art.
+              </Link>
+            </Typography>
+          </Grid>
+          <Grid sm={12} sx={{ display: { xs: 'flex', scrollMarginInlineEnd: 'flex'} }}>
+            <Box 
+              component="img"
+              sx={{ 
+                maxWidth: 1,
+                objectFit: "contain"
+              }}
+              src={collage}
+            ></Box>
+          </Grid>
+          {
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
@@ -121,7 +140,7 @@ const NietzschesDemon = () => {
               &nbsp; or contact contact@tuesdayknightgames.com.
             </Typography>
           </Grid>
-          */}
+          }
         </Grid>
       </Box>
   );
