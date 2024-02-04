@@ -13,7 +13,7 @@ const NietzschesDemon = () => {
   };
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/nietzschesdemon/';
   const downloadUrl = gcsFolderUrl + 'NietzschesDemon.zip';
-  const moduleLogo = gcsFolderUrl + 'NietzschesDemonLogo.jpg';
+  const moduleLogo = gcsFolderUrl + 'NietzschesDemonImaniScream.jpg';
   const collage = gcsFolderUrl + 'NietzscheCollageSmall.jpg';
   const images = [];
 
