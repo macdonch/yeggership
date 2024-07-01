@@ -88,7 +88,7 @@ const GetNews = () => {
 			{
 				"date": "Jan 24, 2024",
 				"title": "Chariot of the Gods",
-				"text": "Resources for an Chariot of the Gods from the Alien RPG have been posted."
+				"text": "Resources for a Mothership conversion of Chariot of the Gods from the Alien RPG have been posted."
 			}
 		]
     return newsJson;
