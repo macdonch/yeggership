@@ -84,6 +84,11 @@ const GetNews = () => {
 				"date": "Jan 24, 2024",
 				"title": "Nietzsche's Demon Art Samples Posted",
 				"text": "Nietzsche's Demon art samples have been uploaded to the home page."
+			},
+			{
+				"date": "Jan 24, 2024",
+				"title": "Chariot of the Gods",
+				"text": "Resources for an Chariot of the Gods from the Alien RPG have been posted."
 			}
 		]
     return newsJson;

@@ -99,7 +99,7 @@ const TerminalDelays = () => {
                 I ran this module in a single session, as a 'prequel' with pre-generated characters that appeared as NPCs later 
                 in our campaign timeline. I used Audacity to splice the "hold" message with commercials from <i>Blade Runner</i> and Public Service 
                 Announcements from <i>Starship Troopers</i>. I also created a custom commerical for "AdrenoBoost". 
-              
+              <br />
               <br />
                 I have made the following resources available:
               
