@@ -89,6 +89,11 @@ const GetNews = () => {
 				"date": "Jan 24, 2024",
 				"title": "Chariot of the Gods",
 				"text": "Resources for a Mothership conversion of Chariot of the Gods from the Alien RPG have been posted."
+			},
+			{
+				"date": "Sep 22, 2024",
+				"title": "Nietzsche's Demon Kickstarter Launching Soon",
+				"text": "Nietzsche's Demon art is complete. Finalizing layout and editing now, kickstarter should launch in October!"
 			}
 		]
     return newsJson;

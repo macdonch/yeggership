@@ -105,7 +105,7 @@ const NietzschesDemon = () => {
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
-              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q2 2024.
+              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q4 2024.
             </Typography>
           </Grid>
           <Grid xs={12} sx={{ display: 'block' }}>

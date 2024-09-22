@@ -46,7 +46,7 @@ const Home = () => {
               </Link>
               <br />
               <br />      
-              Someday soon we will launch a Kickstarter for Neitzsche's  Demon.
+              Someday VERY soon we will launch a Kickstarter for Neitzsche's  Demon.
             </Typography>
             <br />
           </Grid>
