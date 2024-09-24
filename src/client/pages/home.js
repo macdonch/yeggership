@@ -46,7 +46,11 @@ const Home = () => {
               </Link>
               <br />
               <br />      
-              Someday VERY soon we will launch a Kickstarter for Neitzsche's  Demon.
+              Neitzsche's Demon &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
+                Kickstarter prelaunch page
+              </Link>
+              &nbsp;is up!.
             </Typography>
             <br />
           </Grid>
@@ -61,12 +65,12 @@ const Home = () => {
                   <Typography variant="h5">Products</Typography>
                 </Grid>
                 <Grid xs={12}>
+                  {NietzschesDemon()}
+                </Grid>
+                <Grid xs={12}>
                   {ClawsOut()}
                   <br />
                   <Divider variant="middle" color={primary}/>
-                </Grid>
-                <Grid xs={12}>
-                  {NietzschesDemon()}
                 </Grid>
                 {/* Site Description */}
                 <Grid xs={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
