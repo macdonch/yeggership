@@ -90,14 +90,12 @@ const NietzschesDemon = () => {
               <Typography display="inline">
                 <i>Nietzsche's Demon</i> is a 48 page module compatible with the Mothership RPG&trade;. It contains:
                 <ul>
-                  <li>Descriptions and stats for 8 NPCs.</li>
+                  <li>Descriptions and portraits for 8 NPCs.</li>
                   <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
                   <li>A detailed timeline of events, structured in five acts.</li>
                   <li>Detailed explanations of several module-specific mechanics.</li>
-                  <li>Detailed mechanics and descriptions for the monster.</li>
+                  <li>Detailed mechanics and descriptions for the Entity.</li>
                   <li>Suggestions on how to handle common player actions, and how to incorporate character skills in to gameplay.</li>
-                  <li>An optional campaign setting, including a sector map, and brief desriptions of several systems.</li>
-                  <li>Contracts for Teamsters, Androids, and Scientists, and Travel Orders for Marines.</li>
                 </ul>
               </Typography>
             </Box>
@@ -105,7 +103,10 @@ const NietzschesDemon = () => {
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
-              <i>Nietzsche's Demon</i> will be launched via Kickstarter in Q4 2024.
+              <i>Nietzsche's Demon</i> is going to launch in October 2024. Please visit the&nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
+              Kickstarter prelaunch page.
+              </Link>
             </Typography>
           </Grid>
           <Grid xs={12} sx={{ display: 'block' }}>
