@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 
 const OldBen = () => {
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/characters/oldben/';
@@ -27,18 +28,30 @@ const OldBen = () => {
             </Typography>
             <br />
             <Typography>
-              'Old Ben' was created as a PC by Charles Allen.
+              'Old Ben' was created as a PC by Charles Allen, and is now a recurring NPC in our campaign.
             </Typography>
           </Grid>
           <Grid xs={12} md={6} sx={{ display: 'block', textAlign: "center" }}>
-            <Typography>"Old Ben"</Typography>
+            <Typography>
+              <br />
+              <br />
+              "Old Ben"
+            </Typography>
             <Box 
               component="img"
               sx={{ 
                 height: 300,
               }}
               src={characterImage}
-              ></Box>
+              >
+            </Box>
+            <Typography>
+              <br />
+              Artist: &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
+                C. Gauthier
+              </Link>
+            </Typography>
           </Grid>
         </Grid>
       </Box>

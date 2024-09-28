@@ -252,17 +252,31 @@ const ClawsOutResources = () => {
         ))}
       </Box>
       <Grid xs={12} sx={{ display: 'block' }}>
-          <Typography>
-            <br />
-            <br />
-            Mothership RPG are trademarks of Tuesday Knight Games. For
-            additional information, visit &nbsp;
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
-              www.tuesdayknightgames.com
-            </Link>
-            &nbsp; or contact contact@tuesdayknightgames.com.
-          </Typography>
-        </Grid>
+        <Typography>
+          <br />
+          <br />
+          The maps of the <i>Agamemnon</i> are modelled after the Accessible Maps created by Violet Ballard for the RV Games publication &nbsp;
+          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
+            <i>Advanced Rules</i>
+          </Link>
+          &nbsp; available under a Creative Commons &nbsp;
+          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
+            license.
+          </Link>
+        </Typography>
+      </Grid>
+      <Grid xs={12} sx={{ display: 'block' }}>
+        <Typography>
+          <br />
+          <br />
+          Mothership RPG are trademarks of Tuesday Knight Games. For
+          additional information, visit &nbsp;
+          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+            www.tuesdayknightgames.com
+          </Link>
+          &nbsp; or contact contact@tuesdayknightgames.com.
+        </Typography>
+      </Grid>
     </Box>
   );
 }

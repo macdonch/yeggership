@@ -192,6 +192,20 @@ const Agamemnon = () => {
             <br />
           </Grid>
         </Grid>
+        <Grid xs={12} sx={{ display: 'block' }}>
+          <Typography>
+            <br />
+            <br />
+            The maps of the <i>Agamemnon</i> are modelled after the Accessible Maps created by Violet Ballard for the RV Games publication &nbsp;
+            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
+              <i>Advanced Rules</i>
+            </Link>
+            &nbsp; available under a Creative Commons &nbsp;
+            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
+              license.
+            </Link>
+          </Typography>
+        </Grid>
       </Box>
   );
 }

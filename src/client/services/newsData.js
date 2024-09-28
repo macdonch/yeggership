@@ -98,7 +98,12 @@ const GetNews = () => {
 			{
 				"date": "Sep 23, 2024",
 				"title": "Nietzsche's Demon Kickstarter Prelaunch",
-				"text": "The Kickstart pre-launch age is up!"
+				"text": "The Kickstart pre-launch page is up!"
+			},
+			{
+				"date": "Sep 27, 2024",
+				"title": "Nietzsche's Demon - First Printing",
+				"text": "100 copies of Nietzsche's Demon should land in mid-October. No more proof-reading allowed."
 			}
 		]
     return newsJson;
