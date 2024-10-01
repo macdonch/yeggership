@@ -31,6 +31,16 @@ const NietzschesDemon = () => {
             ></Box>
           </Grid>
           <Grid xs={12} sm={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
+          <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography>
+              <br />
+              <i>Nietzsche's Demon</i> &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
+              Kickstarter
+              </Link>
+              &nbsp; is live!
+            </Typography>
+          </Grid>
             <Grid xs={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
@@ -88,7 +98,7 @@ const NietzschesDemon = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Nietzsche's Demon</i> is a 48 page module compatible with the Mothership RPG&trade;. It contains:
+                <i>Nietzsche's Demon</i> is a 52 page module compatible with the Mothership RPG&trade;. It contains:
                 <ul>
                   <li>Descriptions and portraits for 8 NPCs.</li>
                   <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
@@ -99,15 +109,6 @@ const NietzschesDemon = () => {
                 </ul>
               </Typography>
             </Box>
-          </Grid>
-          <Grid xs={12} sx={{ display: 'block' }}>
-            <Typography>
-              <br />
-              <i>Nietzsche's Demon</i> is going to launch in October 2024. Please visit the&nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
-              Kickstarter prelaunch page.
-              </Link>
-            </Typography>
           </Grid>
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>

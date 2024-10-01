@@ -18,6 +18,16 @@ const Home = () => {
     <Box>
       <Box sx={{ display: { xs: 'block', sm: 'block' } }}>
         <Grid container rowSpacing={2} columnSpacing={2} alignItems="top">
+          <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography variant="h4">
+              <br />
+              <i>Nietzsche's Demon</i> &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
+              Kickstarter
+              </Link>
+              &nbsp; is live!
+            </Typography>
+          </Grid>
           {/* Welcome */}
           <Grid xs={12}>
             <Typography>
@@ -43,14 +53,7 @@ const Home = () => {
               <i>Claws Out</i> is now available at &nbsp;
                 <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
                     DriveThruRPG!
-              </Link>
-              <br />
-              <br />      
-              Neitzsche's Demon &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
-                Kickstarter prelaunch page
-              </Link>
-              &nbsp;is up!.
+              </Link>   
             </Typography>
             <br />
           </Grid>

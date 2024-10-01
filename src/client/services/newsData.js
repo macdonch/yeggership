@@ -104,6 +104,11 @@ const GetNews = () => {
 				"date": "Sep 27, 2024",
 				"title": "Nietzsche's Demon - First Printing",
 				"text": "100 copies of Nietzsche's Demon should land in mid-October. No more proof-reading allowed."
+			},
+			{
+				"date": "Oct 1, 2024",
+				"title": "Nietzsche's Demon Funded!",
+				"text": "Nietzsche's Demon Kickstarter was funded in 20 minutes! On to the stretch goals."
 			}
 		]
     return newsJson;
