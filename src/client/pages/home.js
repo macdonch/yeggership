@@ -18,16 +18,6 @@ const Home = () => {
     <Box>
       <Box sx={{ display: { xs: 'block', sm: 'block' } }}>
         <Grid container rowSpacing={2} columnSpacing={2} alignItems="top">
-          <Grid xs={12} sx={{ display: 'block' }}>
-            <Typography variant="h4">
-              <br />
-              <i>Nietzsche's Demon</i> &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
-              Kickstarter
-              </Link>
-              &nbsp; has finished! Fullfilment will run through 2024. In 2025, the digital version will be on DriveThruRPG and physical copies will be available from Tuesday Knight Games.
-            </Typography>
-          </Grid>
           {/* Welcome */}
           <Grid xs={12}>
             <Typography>
