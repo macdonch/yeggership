@@ -25,7 +25,7 @@ const Home = () => {
               <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
               Kickstarter
               </Link>
-              &nbsp; is live!
+              &nbsp; has finished! Fullfilment will run through 2024. In 2025, the digital version will be on DriveThruRPG and physical copies will be available from Tuesday Knight Games.
             </Typography>
           </Grid>
           {/* Welcome */}

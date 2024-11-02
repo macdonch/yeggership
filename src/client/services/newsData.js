@@ -109,6 +109,11 @@ const GetNews = () => {
 				"date": "Oct 1, 2024",
 				"title": "Nietzsche's Demon Funded!",
 				"text": "Nietzsche's Demon Kickstarter was funded in 20 minutes! On to the stretch goals."
+			},
+			{
+				"date": "Nov 2, 2024",
+				"title": "Nietzsche's Demon Fullfilment",
+				"text": "Nietzsche's Demon Kickstarter had 383 backers. Digital fulfillment is beginning now, physical will start late November as product arrives fom the printers."
 			}
 		]
     return newsJson;
