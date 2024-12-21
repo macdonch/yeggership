@@ -114,6 +114,11 @@ const GetNews = () => {
 				"date": "Nov 2, 2024",
 				"title": "Nietzsche's Demon Fullfilment",
 				"text": "Nietzsche's Demon Kickstarter had 383 backers. Digital fulfillment is beginning now, physical will start late November as product arrives fom the printers."
+			},
+			{
+				"date": "Dec 21, 2024",
+				"title": "Nietzsche's Demon Has Shipped",
+				"text": "Kickstarter shipping is done (except for a few backers I don't have addresses for). A few copies have already been delivered in Switzerland and Great Britain!"
 			}
 		]
     return newsJson;
