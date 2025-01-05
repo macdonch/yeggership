@@ -50,7 +50,7 @@ const GetCharacterClasses = () => {
             intellect: 0,
             combat: 10,
             sanity: 0,
-            fear: 10,
+            fear: 20,
             body: 10,
             wounds: 3,
             variableSkillModifier: 0,
