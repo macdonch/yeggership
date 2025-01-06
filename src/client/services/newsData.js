@@ -119,10 +119,19 @@ const GetNews = () => {
 				"date": "Dec 21, 2024",
 				"title": "Nietzsche's Demon Has Shipped",
 				"text": "Kickstarter shipping is done (except for a few backers I don't have addresses for). A few copies have already been delivered in Switzerland and Great Britain!"
+			},
+			{
+				"date": "Dec 30, 2024",
+				"title": "Nietzsche's Demon Available on DTRPG",
+				"text": "Nietzsche's Demon is available for purchase on DriveThruRPG. Physical copies will be available via TKG and other retailers in 2025, or as an add on in our next Kickstarter."
+			},
+			{
+				"date": "Jan 5, 2025",
+				"title": "Fixes to the Character Sheets",
+				"text": "Marine Fear save bonus fixed from +10 to +20. Credits box added."
 			}
 		]
     return newsJson;
 }
-
 
 export { GetNews }

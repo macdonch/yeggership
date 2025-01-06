@@ -7,7 +7,7 @@ import Mothership1eLogo from '../../assets/1eLogoWebsite.png';
 const NietzschesDemon = () => {
 
   const module = {
-    driveThruUrl: 'https://preview.drivethrurpg.com/en/product/370801/mothership-piece-by-piece',
+    driveThruUrl: 'https://www.drivethrurpg.com/en/product/500887/mothership-nietzsche-s-demon',
     title: "Nietzsche's Demon",
     type: 'module'
   };
@@ -31,16 +31,6 @@ const NietzschesDemon = () => {
             ></Box>
           </Grid>
           <Grid xs={12} sm={9} sx={{ display: { xs: 'block', sm: 'block'} }}>
-          <Grid xs={12} sx={{ display: 'block' }}>
-            <Typography>
-              <br />
-              <i>Nietzsche's Demon</i> &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/nietzsches-demon-a-mothership-adventure">
-              Kickstarter
-              </Link>
-              &nbsp; has finished! Fullfilment will run through 2024. In 2025, the digital version will be on DriveThruRPG and physical copies will be available from Tuesday Knight Games.
-            </Typography>
-          </Grid>
             <Grid xs={12}>
               <Box>
                 <Typography variant="h1" textAlign={"center"} sx={{ display: { xs: 'none', sm: 'block'} }}>
@@ -129,7 +119,19 @@ const NietzschesDemon = () => {
               src={collage}
             ></Box>
           </Grid>
-          {
+
+          <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography display="inline">
+              <br />
+              <br />
+              <i>{module.title}</i> is now availabe for  purchase at &nbsp;
+              <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                DriveThruRPG
+              </Link>
+              .
+            </Typography>
+          </Grid>
+          
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>
               <br />
@@ -142,7 +144,7 @@ const NietzschesDemon = () => {
               &nbsp; or contact contact@tuesdayknightgames.com.
             </Typography>
           </Grid>
-          }
+          
         </Grid>
       </Box>
   );

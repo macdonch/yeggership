@@ -7,7 +7,7 @@ import Mothership1eLogo from '../../assets/1eLogoWebsite.png';
 const ClawsOut = () => {
 
   const module = {
-    driveThruUrl: 'https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size',
+    driveThruUrl: 'https://www.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-and-a4-size',
     title: 'Claws Out',
     type: 'pamphlet module'
   };
