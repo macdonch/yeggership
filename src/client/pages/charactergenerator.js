@@ -147,6 +147,7 @@ const CharacterGenerator = () => {
   const [loadout, setLoadout] = React.useState([]);
   const [trinket, setTrinket] = React.useState('');
   const [patch, setPatch] = React.useState('');
+  const [credits, setCredits] = React.useState(0);
   const [talents, setTalents] = React.useState([]);
   const [pdf, setPdf] = React.useState();
   const [characterSummary, setCharacterSummary] = React.useState({});
@@ -1014,17 +1015,20 @@ const CharacterGenerator = () => {
 
   const generateEquipment = () => {
     setEquipmentDisabled(true);
+    const credits = generateDiceRolls(2, 10, 1).sum * 10;
     const loadout = GetLoadout(characterClass);
     const trinket = GetTrinket();
     const patch = GetPatch();
                 setLoadout(loadout);
     setTrinket(trinket);
     setPatch(patch);
+    setCredits(credits);
     setEquipmentChosen(true);
     const _characterSummary = characterSummary;
     _characterSummary['loadout']  = loadout;
     _characterSummary['trinket']  = trinket;
     _characterSummary['patch']  = patch;
+    _characterSummary['credits']  = credits;
     _characterSummary['version'] = getVersion();
     setCharacterSummary(_characterSummary);
     if (houseRules) {
@@ -2062,7 +2066,7 @@ const CharacterGenerator = () => {
               </Grid>
             </Grid>
 
-            {/* TRINKET */}
+            {/* PATCH TRINKET CREDITS*/}
             <Grid sm={12} md={4} alignItems={"top"}>
               <Grid sm={12} md={9} container rowSpacing={1} flex={true} sx={{ backgroundColor: primary , my: 1}}>
                 <Grid sm={12} sx={{ display: { xs: 'none', sm: 'flex'} }}>
@@ -2086,6 +2090,14 @@ const CharacterGenerator = () => {
                 </Grid>
                 <Grid sm={6}style={{textAlign: "left"}}>
                   <Typography >{trinket}</Typography>
+                </Grid>
+              </Grid>
+              <Grid display={"flex"} sm={12} md={9}>
+                <Grid sm={6}>
+                  <Typography>Credits</Typography>
+                </Grid>
+                <Grid sm={6}style={{textAlign: "left"}}>
+                  <Typography >{credits}</Typography>
                 </Grid>
               </Grid>
             </Grid>

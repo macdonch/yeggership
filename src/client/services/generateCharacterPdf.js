@@ -22,189 +22,194 @@ const GenerateCharacterPdf = (characterSummary) => {
   // Letter = 612 × 792 points
   const styles = StyleSheet.create({
     page: {
-    backgroundColor: '#ffffff',
-    margin: 30,
-    fontFamily: 'Montserrat',
-    color: '#2c2e30',
+      backgroundColor: '#ffffff',
+      margin: 30,
+      fontFamily: 'Montserrat',
+      color: '#2c2e30',
     },
     row: {
-    flexDirection: 'row',
-    fontSize: 11
+      flexDirection: 'row',
+      fontSize: 11
     },
-    headerRow: {
-    flexDirection: 'row'
+      headerRow: {
+      flexDirection: 'row'
     },
     boxBorder: {
-    margin: 5,
-    padding: 5,
-    minWidth: 50,
-    maxWidth: 552,
-    border: 2,
+      margin: 5,
+      padding: 5,
+      minWidth: 50,
+      maxWidth: 552,
+      border: 2,
     },
     statsBorder: {
-    marginLeft: 0,
-    marginRight: 20,
-    marginVertical: 2,
-    border: 2,
-    width: 126,
-    borderColor: '#2c2e30'
+      marginLeft: 0,
+      marginRight: 20,
+      marginVertical: 2,
+      border: 2,
+      width: 126,
+      borderColor: '#2c2e30'
     },
     talentBorder: {
-    marginLeft: 0,
-    marginRight: 20,
-    marginVertical: 10,
-    border: 2,
-    width: 266,
-    borderColor: '#2c2e30'
+      marginLeft: 0,
+      marginRight: 20,
+      marginVertical: 10,
+      border: 2,
+      width: 266,
+      borderColor: '#2c2e30'
     },
     statsHeadingColumn: {
-    flexDirection: 'column',
-    marginTop: -1,
-    marginBottom: 2,
-    marginLeft: -1,
-    fontSize: 13,
-    backgroundColor: '#2c2e30',
-    color: '#ffffff',
-    fontWeight: 700,
-    width: 125
+      flexDirection: 'column',
+      marginTop: -1,
+      marginBottom: 2,
+      marginLeft: -1,
+      fontSize: 13,
+      backgroundColor: '#2c2e30',
+      color: '#ffffff',
+      fontWeight: 700,
+      width: 125
     },
     talentHeadingColumn: {
-    flexDirection: 'column',
-    marginTop: -1,
-    marginBottom: 2,
-    marginLeft: -1,
-    fontSize: 13,
-    backgroundColor: '#2c2e30',
-    color: '#ffffff',
-    fontWeight: 700,
-    width: 265
+      flexDirection: 'column',
+      marginTop: -1,
+      marginBottom: 2,
+      marginLeft: -1,
+      fontSize: 13,
+      backgroundColor: '#2c2e30',
+      color: '#ffffff',
+      fontWeight: 700,
+      width: 265
     },
     skillsHeading: {
-    marginTop: 10,
-    marginBottom: 5,
-    fontSize: 13,
-    backgroundColor: '#2c2e30',
-    color: '#ffffff',
-    fontWeight: 700,
-    width: 552
+      marginTop: 10,
+      marginBottom: 5,
+      fontSize: 13,
+      backgroundColor: '#2c2e30',
+      color: '#ffffff',
+      fontWeight: 700,
+      width: 552
     },
     tableHeadingRow: {
-    flexDirection: 'row',
-    marginVertical: -5,
-    fontSize: 11,
-    fontWeight: 400,
-    width: 552
+      flexDirection: 'row',
+      marginVertical: -5,
+      fontSize: 11,
+      fontWeight: 400,
+      width: 552
     },
     tableColumn: {
-    flexDirection: 'column',
-    fontSize: 11,
-    fontWeight: 'normal'
+      flexDirection: 'column',
+      fontSize: 11,
+      fontWeight: 'normal'
     },
     tableRow: {
-    flexDirection: 'row',
-    marginVertical: -10,
-    fontSize: 11,
-    alignItems: 'center'
+      flexDirection: 'row',
+      marginVertical: -10,
+      fontSize: 11,
+      alignItems: 'center'
     },
     skillRow: {
-    flexDirection: 'row',
-    marginVertical: -10,
-    fontSize: 11
+      flexDirection: 'row',
+      marginVertical: -10,
+      fontSize: 11
     },
     equipmentRow: {
-    flexDirection: 'row',
-    marginVertical: -10,
-    fontSize: 11,
-    alignItems: 'top'
+      flexDirection: 'row',
+      marginVertical: -10,
+      fontSize: 11,
+      alignItems: 'top'
     },
     section: {
-    margin: 5,
-    padding: 5,
-    flexGrow: 1,
+      margin: 5,
+      padding: 5,
+      flexGrow: 1,
     },
     name: {
-    marginTop: 10,
-    marginBottom: 5,
-    padding: 10,
-    fontSize: 13,
-    borderBottom: 2,
-    borderColor: '#2c2e30',
-    width: 360,
-    color: '#2c2e30'
+      marginTop: 10,
+      marginBottom: 5,
+      padding: 10,
+      fontSize: 13,
+      borderBottom: 2,
+      borderColor: '#2c2e30',
+      width: 360,
+      color: '#2c2e30'
     },
     class: {
-    marginTop: 10,
-    marginBottom: 5,
-    padding: 10,
-    fontSize: 13,
-    fontWeight: 700,
-    borderBottom: 2,
-    borderBottomColor: '#2c2e30',
-    width: 132,
-    backgroundColor: '#2c2e30',
-    color: '#ffffff',
-    textAlign: 'center'
+      marginTop: 10,
+      marginBottom: 5,
+      padding: 10,
+      fontSize: 13,
+      fontWeight: 700,
+      borderBottom: 2,
+      borderBottomColor: '#2c2e30',
+      width: 132,
+      backgroundColor: '#2c2e30',
+      color: '#ffffff',
+      textAlign: 'center'
     },
     logo: {
-    margin: 0,
-    padding: 0,
-    width: 60,
+      margin: 0,
+      padding: 0,
+      width: 60,
     },
     statName: {
-    margin: 5,
-    padding: 5,
-    width: 80,
+      margin: 5,
+      padding: 5,
+      width: 80,
     },
     statValue: {
-    margin: 5,
-    padding: 5,
-    textAlign: 'right',
-    fontSize: 16,
-    width: 30
+      margin: 5,
+      padding: 5,
+      textAlign: 'right',
+      fontSize: 16,
+      width: 30
+    },
+    creditsValue: {
+      margin: 5,
+      padding: 5,
+      width: 80,
     },
     healthName: {
-    margin: 5,
-    padding: 5,
-    width: 60,
+      margin: 5,
+      padding: 5,
+      width: 60,
     },
     healthValue: {
-    marginVertical: 10,
-    padding: 0,
-    textAlign: 'right',
-    width: 10
+      marginVertical: 10,
+      padding: 0,
+      textAlign: 'right',
+      width: 10
     },
     healthFiller: {
-    margin: 5,
-    padding: 5,
-    width: 14,
+      margin: 5,
+      padding: 5,
+      width: 14,
     },
     skillName: {
-    margin: 5,
-    padding: 5,
-    width: 100
+      margin: 5,
+      padding: 5,
+      width: 100
     },
     skillBonus: {
-    margin: 5,
-    padding: 5,
-    width: 40,
-    textAlign: 'center'
+      margin: 5,
+      padding: 5,
+      width: 40,
+      textAlign: 'center'
     },
     skillType: {
-    margin: 5,
-    padding: 5,
-    width: 60,
-    textAlign: 'center'
+      margin: 5,
+      padding: 5,
+      width: 60,
+      textAlign: 'center'
     },
     skillDescription: {
-    margin: 5,
-    padding: 5,
-    flexGrow: 1,
-    maxWidth: 307
+      margin: 5,
+      padding: 5,
+      flexGrow: 1,
+      maxWidth: 307
     },
     loadout: {
-    margin: 5,
-    padding: 5,
-    width: 345
+      margin: 5,
+      padding: 5,
+      width: 345
     },
     trinket: {
       marginTop: 10,
@@ -220,21 +225,21 @@ const GenerateCharacterPdf = (characterSummary) => {
       maxWidth: 260
     },
     version: {
-    margin: 0,
-    width: 552,
-    fontSize: 8,
-    textAlign: 'right',
+      margin: 0,
+      width: 552,
+      fontSize: 8,
+      textAlign: 'right',
     },
     resolve: {
-    marginTop: 100,
-    marginLeft: 150,
-    textAlign: 'left',
-    alignContent: 'baseline'
+      marginTop: 100,
+      marginLeft: 0,
+      textAlign: 'left',
+      alignContent: 'baseline'
     }
   });
 
   // Create Document Component
-  if (characterSummary === {}) {
+  if (!("class" in characterSummary)) {
     MyDocument = (<Document />);
   } else {
     MyDocument = (
@@ -259,7 +264,7 @@ const GenerateCharacterPdf = (characterSummary) => {
             </View>      
           </View>
 
-          {/* STATS AND SAVES */}
+          {/* STATS AND SAVES AND CREDITS*/}
           <View style={styles.row}>
             <View style={styles.statsBorder}>
               <View style={styles.statsHeadingColumn}>
@@ -328,6 +333,18 @@ const GenerateCharacterPdf = (characterSummary) => {
                 </View>
                 <View style={styles.statValue}>
                   <Text>{characterSummary.saves.body}</Text>
+                </View>
+              </View>
+            </View>
+            <View style={styles.statsBorder}>
+              <View style={styles.statsHeadingColumn}>
+                <View style={styles.statName}>
+                  <Text>CREDITS</Text>
+                </View>
+              </View>
+              <View style={styles.tableRow}>
+                <View style={styles.creditsValue}>
+                  <Text>{characterSummary.credits}</Text>
                 </View>
               </View>
             </View>

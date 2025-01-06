@@ -120,6 +120,8 @@ const FillableCharacter = () => {
   setStateFunctions['trinket'] = setTrinket;
   const [patch, setPatch] = React.useState('');
   setStateFunctions['patch'] = setPatch;
+  const [credits, setCredits] = React.useState(0);
+  setStateFunctions['credits'] = setCredits;
   const [talents, setTalents] = React.useState([]);
   const [pdf, setPdf] = React.useState();
   const [characterSummary, setCharacterSummary] = React.useState({});
@@ -321,7 +323,8 @@ const FillableCharacter = () => {
       skills: _skills,
       loadout: loadout,
       patch: patch,
-      trinket: trinket
+      trinket: trinket,
+      credits: credits
     }
     _characterSummary['version'] = getVersion();
     if (houseRules) {
@@ -655,7 +658,7 @@ const FillableCharacter = () => {
 
             <Grid container rowSpacing={1}>
               {/* LOADOUT */}
-              <Grid sm={12} md={4} alignItems={"top"}>
+              <Grid sm={12} md={3} alignItems={"top"}>
                 <Grid sm={12} md={9} container rowSpacing={1} flex={true} sx={{ backgroundColor: primary , my: 1}}>
                   <Grid sm={12}>
                     <Typography variant="h6" color={secondary} >LOADOUT</Typography>
@@ -676,7 +679,7 @@ const FillableCharacter = () => {
                 </Grid>
               </Grid>
               {/* PATCH */}
-              <Grid sm={12} md={4} alignItems={"top"}>
+              <Grid sm={12} md={3} alignItems={"top"}>
                 <Grid sm={12} md={9} container rowSpacing={1} flex={true} sx={{ backgroundColor: primary , my: 1}}>
                   <Grid sm={12}>
                     <Typography variant="h6" color={secondary} >PATCH</Typography>
@@ -697,7 +700,7 @@ const FillableCharacter = () => {
                 </Grid>
               </Grid>
               {/* TRINKET */}
-              <Grid sm={12} md={4} alignItems={"top"}>
+              <Grid sm={12} md={3} alignItems={"top"}>
                 <Grid sm={12} md={9} container rowSpacing={1} flex={true} sx={{ backgroundColor: primary , my: 1}}>
                   <Grid sm={12}>
                     <Typography variant="h6" color={secondary} >TRINKET</Typography>
@@ -709,6 +712,27 @@ const FillableCharacter = () => {
                       id="trinket"
                       onChange={onChangeHandler}
                       name="trinket"
+                      multiline
+                      minRows={3}
+                      sx={{ width: 375 }}
+                    >
+                    </TextField>
+                  </FormControl> 
+                </Grid>
+              </Grid>
+              {/* CREDITS */}
+              <Grid sm={12} md={3} alignItems={"top"}>
+                <Grid sm={12} md={9} container rowSpacing={1} flex={true} sx={{ backgroundColor: primary , my: 1}}>
+                  <Grid sm={12}>
+                    <Typography variant="h6" color={secondary} >CREDITS</Typography>
+                  </Grid>
+                </Grid>
+                <Grid sm={12}>
+                  <FormControl variant="standard">
+                    <TextField
+                      id="credits"
+                      onChange={onChangeHandler}
+                      name="credits"
                       multiline
                       minRows={3}
                       sx={{ width: 375 }}
@@ -999,6 +1023,14 @@ const FillableCharacter = () => {
                   </Grid>
                   <Grid sm={6}style={{textAlign: "left"}}>
                     <Typography >{trinket}</Typography>
+                  </Grid>
+                </Grid>
+                <Grid display={"flex"} sm={12} md={9}>
+                  <Grid sm={6}>
+                    <Typography>Credits</Typography>
+                  </Grid>
+                  <Grid sm={6}style={{textAlign: "left"}}>
+                    <Typography >{credits}</Typography>
                   </Grid>
                 </Grid>
               </Grid>
