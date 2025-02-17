@@ -172,8 +172,14 @@ const ClawsOutResources = () => {
           <Typography>
             The module gives a general description of the cargo ship <i>Agamemnon</i> and a monster, but does not provide a map, or monster stats. Wardens can make their own, or can use the resources provided in the zine supplement provided in here.
             The interior spreads can be viewed below, and the zine can be downloaded as a pdf in few formats. The zine is also included in the .zip file in the Additional Material section.
-            < br />
-            < br />
+            <br />
+            <br />
+            A new version of the supplement will be uploaded in Q2 2025 with new character and monster art by &nbsp;
+            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://gestaltzerfall.carrd.co/">
+              Gestalterzerfall.
+            </Link>
+            <br />
+            <br />
             <Link display="inline" underline="none" target="_blank" rel="noopener" href={zineNoCover} sx={{ display:  'block' }}>
               Zine - Coverless (good for two page display in a browser) {<DownloadIcon />}
             </Link>
