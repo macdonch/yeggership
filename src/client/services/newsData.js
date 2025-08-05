@@ -133,7 +133,7 @@ const GetNews = () => {
 			{
 				"date": "August 4, 2025",
 				"title": "Claws Out Supplement Update",
-				"text": "The Claws Out Supplment has been updated with new art."
+				"text": "The Claws Out Supplement has been updated with new art."
 			}
 		]
     return newsJson;
