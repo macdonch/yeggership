@@ -15,8 +15,7 @@ const ClawsOutResources = () => {
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
   const pawPrint = gcsFolderUrl + 'PawPrint.png';
-  const zineNoCover = gcsFolderUrl + 'ClawsOut-Supplement-NoCover.pdf';
-  const zinePrintFriendly = gcsFolderUrl + 'ClawsOut-Supplement-PrintFriendly.pdf';
+  const zine = gcsFolderUrl + 'ClawsOut-Supplement.pdf';
   const zineSpreads = [
     {
       displayText: 'Zine Spread 1',
@@ -174,17 +173,14 @@ const ClawsOutResources = () => {
             The interior spreads can be viewed below, and the zine can be downloaded as a pdf in few formats. The zine is also included in the .zip file in the Additional Material section.
             <br />
             <br />
-            A new version of the supplement will be uploaded in Q2 2025 with new character and monster art by &nbsp;
+            The supplment was updated in Q3 2025 with new character and monster art by &nbsp;
             <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://gestaltzerfall.carrd.co/">
               Gestalterzerfall.
             </Link>
             <br />
             <br />
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={zineNoCover} sx={{ display:  'block' }}>
-              Zine - Coverless (good for two page display in a browser) {<DownloadIcon />}
-            </Link>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={zinePrintFriendly} sx={{ display:  'block' }}>
-              Zine - Print Friendly (0.25 inch margins) {<DownloadIcon />}
+            <Link display="inline" underline="none" target="_blank" rel="noopener" href={zine} sx={{ display:  'block' }}>
+              Zine {<DownloadIcon />}
             </Link>
           </Typography>
           <br />
@@ -221,6 +217,7 @@ const ClawsOutResources = () => {
             Additional Material
           </Typography>
         </Grid>
+        {/*
         <Grid sm={12} sx={{ display: 'block' }}>
           <Typography>
             Blank ship maps, NPC portraits. The zip files also provides deck plans without ventilation,
@@ -233,6 +230,7 @@ const ClawsOutResources = () => {
           </Typography>
           <br />
         </Grid>
+        */}
       </Grid>
       <Box>
         {images.map(({displayText, url}) => (

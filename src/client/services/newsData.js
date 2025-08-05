@@ -129,6 +129,11 @@ const GetNews = () => {
 				"date": "Jan 5, 2025",
 				"title": "Fixes to the Character Sheets",
 				"text": "Marine Fear save bonus fixed from +10 to +20. Credits box added."
+			},
+			{
+				"date": "August 4, 2025",
+				"title": "Claws Out Supplement Update",
+				"text": "The Claws Out Supplment has been updated with new art."
 			}
 		]
     return newsJson;
