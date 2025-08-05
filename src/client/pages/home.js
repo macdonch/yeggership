@@ -8,6 +8,7 @@ import { useTheme } from '@mui/material/styles';
 import News from '../content/news';
 import ClawsOut from '../content/clawsOut';
 import NietzschesDemon from "../content/nietzschesDemon";
+import InstrumentsOfDarkness from "../content/instrumentsOfDarkness";
 
 const Home = () => {
   const theme = useTheme();
@@ -65,6 +66,9 @@ const Home = () => {
                 {/* Products */}
                 <Grid xs={12} sx={{borderBottom: 1, my: 1, display: 'flex' }}>
                   <Typography variant="h5">Products</Typography>
+                </Grid>
+                <Grid xs={12}>
+                  {InstrumentsOfDarkness()}
                 </Grid>
                 <Grid xs={12}>
                   {NietzschesDemon()}
