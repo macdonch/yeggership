@@ -134,6 +134,11 @@ const GetNews = () => {
 				"date": "August 4, 2025",
 				"title": "Claws Out Supplement Update",
 				"text": "The Claws Out Supplement has been updated with new art."
+			},
+			{
+				"date": "August 5, 2025",
+				"title": "Instruments of Darkness Kickstarter has Launched",
+				"text": "The kickstarter is running for 16 days. See the home page for more info."
 			}
 		]
     return newsJson;

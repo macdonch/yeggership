@@ -39,11 +39,20 @@ const Home = () => {
             </Typography>
           </Grid>
           <Grid xs={12}>
+            {/*
             <Typography display="inline">
               <i>Claws Out</i> is now available at &nbsp;
                 <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
                     DriveThruRPG!
               </Link>   
+            </Typography>
+            */}
+            <Typography display="inline">
+              The <i>Instruments of Darkness</i> &nbsp;
+                <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
+                    Kickstarter &nbsp;
+              </Link>
+              is live!
             </Typography>
             <br />
           </Grid>
