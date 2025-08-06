@@ -71,7 +71,7 @@ const InstrumentsOfDarkness = () => {
               <br />
               <Typography display="inline">
               Funding now until August 21st on &nbsp;
-                <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
                     Kickstarter.
                 </Link>
                 </Typography>
@@ -85,7 +85,7 @@ const InstrumentsOfDarkness = () => {
               <br />
               Mothership RPG are trademarks of Tuesday Knight Games. For
               additional information, visit &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
                 www.tuesdayknightgames.com
               </Link>
               &nbsp; or contact contact@tuesdayknightgames.com.

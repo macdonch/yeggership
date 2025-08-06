@@ -202,7 +202,7 @@ const HouseRules = () => {
               }}
               src={downloads.panicTable.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.panicTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloads.panicTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Panic Table {<DownloadIcon />}
             </Link>
           </Grid>
@@ -256,7 +256,7 @@ const HouseRules = () => {
               }}
               src={downloads.talentsTable.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.talentsTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloads.talentsTable.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Talents Table {<DownloadIcon />}
             </Link>
           </Grid>

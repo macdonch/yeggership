@@ -104,7 +104,7 @@ const NietzschesDemon = () => {
             <Typography>
               <br />
               Below is a sample of some the art found in <i>Nietzsche's Demon</i>, by&nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
                 Dark and Stormy Art.
               </Link>
             </Typography>
@@ -125,7 +125,7 @@ const NietzschesDemon = () => {
               <br />
               <br />
               <i>{module.title}</i> is now availabe for  purchase at &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                 DriveThruRPG
               </Link>
               .
@@ -138,7 +138,7 @@ const NietzschesDemon = () => {
               <br />
               Mothership RPG are trademarks of Tuesday Knight Games. For
               additional information, visit &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
                 www.tuesdayknightgames.com
               </Link>
               &nbsp; or contact contact@tuesdayknightgames.com.

@@ -150,7 +150,7 @@ const Hyperspace = () => {
               }}
               src={downloads.hyperspace.thumbNail}
               ></Box>
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloads.hyperspace.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloads.hyperspace.url} sx={{ display: { xs: 'block', sm: 'block'} }}>
               Hyperspace Mechanics{<DownloadIcon />}
             </Link>
           </Grid>

@@ -77,7 +77,7 @@ const ChariotOfTheGods = () => {
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Free League Publishing. It is availabe for 
                   purchase at &nbsp;
-                  <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                  <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                     DriveThruRPG
                   </Link>
                   .
@@ -142,7 +142,7 @@ const ChariotOfTheGods = () => {
               <br />
               The assets I made for my own sessions of Chariot of the Gods contain too much copyrighted material for me to post them here, but feel free to reach out to 
               me by email or on the Mothership Discord server if you would like to see them. Contact information is available at the bottom of the &nbsp;
-              <Link display="inline" underline="hover" href="../">
+              <Link display="inline" underline="true" href="../">
                 Home
               </Link>
               &nbsp;page.

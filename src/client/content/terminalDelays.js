@@ -77,7 +77,7 @@ const TerminalDelays = () => {
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
                   purchase at &nbsp;
-                  <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                  <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                     DriveThruRPG
                   </Link>
                   .
@@ -116,12 +116,12 @@ const TerminalDelays = () => {
                 These can be viewed below, or you can download them as a zip file.
               
               <br />
-                <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
                   Download .zip {<DownloadIcon />}
                 </Link>
               
               <br />
-                <Link display="inline" underline="none" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href={audioUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
                   adrenoBoost Ad {<HeadphonesIcon />}
                 </Link>
               

@@ -48,7 +48,7 @@ const OldBen = () => {
             <Typography>
               <br />
               Artist: &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://darkandstormyart.com/">
                 C. Gauthier
               </Link>
             </Typography>

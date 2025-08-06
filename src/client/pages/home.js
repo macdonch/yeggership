@@ -28,7 +28,7 @@ const Home = () => {
           <Grid xs={12} sx={{ display: { xs: 'none', sm: 'block'} }}>
             <Typography>
               Try out our PC Generator at &nbsp;
-              <Link display="inline" underline="hover" href="./charactergenerator">
+              <Link display="inline" underline="true" href="./charactergenerator">
                 PC GEN
               </Link>
               .
@@ -43,17 +43,17 @@ const Home = () => {
             {/*
             <Typography display="inline">
               <i>Claws Out</i> is now available at &nbsp;
-                <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
                     DriveThruRPG!
               </Link>   
             </Typography>
             */}
             <Typography display="inline">
               The <i>Instruments of Darkness</i> &nbsp;
-                <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
-                    Kickstarter &nbsp;
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
+                    Kickstarter
               </Link>
-              is live!
+              &nbsp; is live!
             </Typography>
             <br />
           </Grid>
@@ -85,7 +85,7 @@ const Home = () => {
                 <Grid xs={12}>
                   <Typography variant={'h6'}>Character Generator</Typography>
                   <Typography display="inline">
-                    <Link display="inline" underline="hover" href="./charactergenerator">
+                    <Link display="inline" underline="true" href="./charactergenerator">
                       PC GEN
                     </Link>
                     &nbsp; guides you through the character creation process. It randomly generating all necessary dice rolls, 
@@ -98,7 +98,7 @@ const Home = () => {
                 <Grid xs={12}>
                   <Typography variant={'h6'}>Character Sheet</Typography>
                   <Typography display="inline">
-                    <Link display="inline" underline="hover" href="./fillablecharacter">
+                    <Link display="inline" underline="true" href="./fillablecharacter">
                       PC SHEET
                     </Link>
                     &nbsp; allows free-form entry for all character fields, and then produces a .pdf.
@@ -111,12 +111,12 @@ const Home = () => {
                   <Typography variant={'h6'}>Campaign and Module Supplementary Content</Typography>
                   <Typography display="inline">
                     The&nbsp;
-                    <Link display="inline" underline="hover" href="./resources">
+                    <Link display="inline" underline="true" href="./resources">
                       RESOURCES
                     </Link>
                     &nbsp; page contains a campaign setting, and material we created for our own play sessions of published modules. 
                     The&nbsp;
-                    <Link display="inline" underline="hover" href="./charactergallery">
+                    <Link display="inline" underline="true" href="./charactergallery">
                       HR
                     </Link>
                     &nbsp; contains memorable characters we have encountered. Feel free to use them as NPCs in your own sessions.
@@ -132,25 +132,25 @@ const Home = () => {
             </Grid>
             <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>Discord: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://discordapp.com/users/458484150828269578" sx={{ display: { xs: 'block', sm: 'block'} }}>
+              <Link underline="true" target="_blank" rel="noopener" href="https://discordapp.com/users/458484150828269578" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 leibniz_2013
               </Link>
             </Grid>
             <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>GitHub: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://github.com/macdonch" sx={{ display: { xs: 'block', sm: 'block'} }}>
+              <Link underline="true" target="_blank" rel="noopener" href="https://github.com/macdonch" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 macdonch
               </Link>
             </Grid>
             <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>RedBubble: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="https://www.redbubble.com/people/leibniz/shop" sx={{ display: { xs: 'block', sm: 'block'} }}>
+              <Link underline="true" target="_blank" rel="noopener" href="https://www.redbubble.com/people/leibniz/shop" sx={{ display: { xs: 'block', sm: 'block'} }}>
                 leibniz
               </Link>
             </Grid>
             <Grid xs={8} md={10} sx={{ display: { xs: 'flex', sm: 'flex', gap: '1rem' } }}>
               <Typography>Email: </Typography>
-              <Link underline="hover" target="_blank" rel="noopener" href="mailto:yeggership@gmail.com" sx={{ display: { xs: 'blcok', sm: 'block'} }}>
+              <Link underline="true" target="_blank" rel="noopener" href="mailto:yeggership@gmail.com" sx={{ display: { xs: 'blcok', sm: 'block'} }}>
                 yeggership@gmail.com
               </Link>
             </Grid>

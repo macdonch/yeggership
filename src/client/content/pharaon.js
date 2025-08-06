@@ -81,7 +81,7 @@ const Pharaon = () => {
             Maps and diagrams are available for download as a zip file.
             < br />
             < br />
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
               Download .zip {<DownloadIcon />}
             </Link>
           </Typography>
@@ -93,11 +93,11 @@ const Pharaon = () => {
             <br />
             <br />
             The maps of the <i>Pharaon</i> are modelled after the Accessible Maps created by Violet Ballard for the RV Games publication &nbsp;
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
               <i>Advanced Rules</i>
             </Link>
             &nbsp; available under a Creative Commons &nbsp;
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
               license.
             </Link>
           </Typography>

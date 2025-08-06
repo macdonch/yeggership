@@ -94,7 +94,7 @@ const Ypsilon14 = () => {
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
                   purchase at &nbsp;
-                  <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                  <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                     DriveThruRPG
                   </Link>
                   .
@@ -127,7 +127,7 @@ const Ypsilon14 = () => {
                 There are previews below, and you can download all of the resources in a zip file.
               
               <br />
-                <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
+                <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloadUrl} sx={{ display: { xs: 'block', sm: 'block'} }}>
                   Download .zip {<DownloadIcon />}
                 </Link>
               

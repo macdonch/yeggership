@@ -67,7 +67,7 @@ const PieceByPiece = () => {
               <Typography display="inline">
                   <i>{module.title}</i> is a {module.type} published by Tuesday Knight Games. It is availabe for 
                   purchase at &nbsp;
-                  <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                  <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                     DriveThruRPG
                   </Link>
                   .
@@ -92,7 +92,7 @@ const PieceByPiece = () => {
             </ul>
             <Typography>
               These can be viewed below, or you can download them as a zip file.
-              <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
                 Download .zip {<DownloadIcon />}
               </Link>
             </Typography>

@@ -104,8 +104,8 @@ const ClawsOut = () => {
             <Typography display="inline">
               <br />
               <br />
-              <i>{module.title}</i> is now availabe for  purchase at &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+              <i>{module.title}</i> is now availabe for purchase at &nbsp;
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                 DriveThruRPG
               </Link>
               .
@@ -117,7 +117,7 @@ const ClawsOut = () => {
               <br />
               Mothership RPG are trademarks of Tuesday Knight Games. For
               additional information, visit &nbsp;
-              <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
                 www.tuesdayknightgames.com
               </Link>
               &nbsp; or contact contact@tuesdayknightgames.com.

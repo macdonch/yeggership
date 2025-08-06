@@ -152,7 +152,7 @@ const ClawsOutResources = () => {
             <br />
             <br />
             <i>{module.title}</i> is now availabe for  purchase at &nbsp;
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href={module.driveThruUrl}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
               DriveThruRPG
             </Link>
             .
@@ -174,13 +174,13 @@ const ClawsOutResources = () => {
             <br />
             <br />
             The supplment was updated in Q3 2025 with new character and monster art by &nbsp;
-            <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://gestaltzerfall.carrd.co/">
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://gestaltzerfall.carrd.co/">
               Gestalterzerfall.
             </Link>
             <br />
             <br />
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={zine} sx={{ display:  'block' }}>
-              Zine {<DownloadIcon />}
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={zine} sx={{ display:  'block' }}>
+              Zine Download {<DownloadIcon />}
             </Link>
           </Typography>
           <br />
@@ -224,7 +224,7 @@ const ClawsOutResources = () => {
             which makes the maps more readable.
             < br />
             < br />
-            <Link display="inline" underline="none" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={downloadUrl} sx={{ display:  'block' }}>
               Download .zip {<DownloadIcon />}
             </Link>
           </Typography>
@@ -260,11 +260,11 @@ const ClawsOutResources = () => {
           <br />
           <br />
           The maps of the <i>Agamemnon</i> are modelled after the Accessible Maps created by Violet Ballard for the RV Games publication &nbsp;
-          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
+          <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/">
             <i>Advanced Rules</i>
           </Link>
           &nbsp; available under a Creative Commons &nbsp;
-          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
+          <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.rvgames.company/advanced-rules/license">
             license.
           </Link>
         </Typography>
@@ -275,7 +275,7 @@ const ClawsOutResources = () => {
           <br />
           Mothership RPG are trademarks of Tuesday Knight Games. For
           additional information, visit &nbsp;
-          <Link display="inline" underline="hover" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
+          <Link display="inline" underline="true" target="_blank" rel="noopener" href="http://www.tuesdayknightgames.com">
             www.tuesdayknightgames.com
           </Link>
           &nbsp; or contact contact@tuesdayknightgames.com.
