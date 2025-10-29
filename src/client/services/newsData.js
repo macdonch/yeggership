@@ -139,6 +139,11 @@ const GetNews = () => {
 				"date": "August 5, 2025",
 				"title": "Instruments of Darkness Kickstarter has Launched",
 				"text": "The kickstarter is running for 16 days. See the home page for more info."
+			},
+			{
+				"date": "October 28, 2025",
+				"title": "Instruments of Darkness Digital Fulfillment",
+				"text": "Instruments of Darkness digital fulfillment is starting today! Printing is also underway, with physical fulfillment expected to being in late November."
 			}
 		]
     return newsJson;

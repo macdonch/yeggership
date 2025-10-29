@@ -53,7 +53,7 @@ const Home = () => {
                 <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
                     Kickstarter
               </Link>
-              &nbsp; is live!
+              &nbsp; fulfillment is underway!
             </Typography>
             <br />
           </Grid>

@@ -70,7 +70,7 @@ const InstrumentsOfDarkness = () => {
               <br />
               <br />
               <Typography display="inline">
-              Funding now until August 21st on &nbsp;
+              Coming soon to DTRPG. Fulfilling now on &nbsp;
                 <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
                     Kickstarter.
                 </Link>

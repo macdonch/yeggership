@@ -15,7 +15,8 @@ const ClawsOutResources = () => {
   const downloadUrl = gcsFolderUrl + 'ClawsOut.zip';
   const moduleLogo = gcsFolderUrl + 'ClawsOutLogo.png';
   const pawPrint = gcsFolderUrl + 'PawPrint.png';
-  const zine = gcsFolderUrl + 'ClawsOut-Supplement.pdf';
+  const zine = gcsFolderUrl + 'Claws-Out-Supplement.pdf';
+  const zinePf = gcsFolderUrl + 'Claws-Out-Supplement-print-friendly.pdf';
   const zineSpreads = [
     {
       displayText: 'Zine Spread 1',
@@ -170,7 +171,7 @@ const ClawsOutResources = () => {
         <Grid sm={12} sx={{ display: 'block' }}>
           <Typography>
             The module gives a general description of the cargo ship <i>Agamemnon</i> and a monster, but does not provide a map, or monster stats. Wardens can make their own, or can use the resources provided in the zine supplement provided in here.
-            The interior spreads can be viewed below, and the zine can be downloaded as a pdf in few formats. The zine is also included in the .zip file in the Additional Material section.
+            The interior spreads can be viewed below, and the zine can be downloaded as a pdf in two formats.
             <br />
             <br />
             The supplment was updated in Q3 2025 with new character and monster art by &nbsp;
@@ -181,6 +182,11 @@ const ClawsOutResources = () => {
             <br />
             <Link display="inline" underline="true" target="_blank" rel="noopener" href={zine} sx={{ display:  'block' }}>
               Zine Download {<DownloadIcon />}
+            </Link>
+            <br />
+            <br />
+            <Link display="inline" underline="true" target="_blank" rel="noopener" href={zinePf} sx={{ display:  'block' }}>
+              Print-friendly Download {<DownloadIcon />}
             </Link>
           </Typography>
           <br />
@@ -209,6 +215,7 @@ const ClawsOutResources = () => {
           </Grid>
         ))}
       </Box>
+      {/*
       <Grid container rowSpacing={1} alignItems="top">
         <Grid sm={12}>
           <br />
@@ -217,7 +224,6 @@ const ClawsOutResources = () => {
             Additional Material
           </Typography>
         </Grid>
-        {/*
         <Grid sm={12} sx={{ display: 'block' }}>
           <Typography>
             Blank ship maps, NPC portraits. The zip files also provides deck plans without ventilation,
@@ -230,7 +236,6 @@ const ClawsOutResources = () => {
           </Typography>
           <br />
         </Grid>
-        */}
       </Grid>
       <Box>
         {images.map(({displayText, url}) => (
@@ -255,6 +260,7 @@ const ClawsOutResources = () => {
           </Grid>
         ))}
       </Box>
+      */}
       <Grid xs={12} sx={{ display: 'block' }}>
         <Typography>
           <br />
