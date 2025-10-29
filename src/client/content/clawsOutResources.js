@@ -174,7 +174,7 @@ const ClawsOutResources = () => {
             The interior spreads can be viewed below, and the zine can be downloaded as a pdf in two formats.
             <br />
             <br />
-            The supplment was updated in Q3 2025 with new character and monster art by &nbsp;
+            The supplement was updated in Q3 2025 with new character and monster art by &nbsp;
             <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://gestaltzerfall.carrd.co/">
               Gestalterzerfall.
             </Link>
