@@ -152,7 +152,7 @@ const GetNews = () => {
 			},
 			{
 				"date": "February 16, 2026",
-				"title": "Instruments of Darkness Avaialbe from TKG",
+				"title": "Instruments of Darkness Available from TKG",
 				"text": "Instruments of Darkness is now available from TKG!"
 			}
 		]
