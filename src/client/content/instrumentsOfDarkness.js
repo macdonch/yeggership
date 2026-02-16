@@ -86,7 +86,7 @@ const InstrumentsOfDarkness = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Nietzsche's Demon</i> is a 32-page half-size booklet (5.5" x 8.5") compatible with the Mothership RPG&trade;. It contains:
+                <i>Instruments of Darkness</i> is a 32-page half-size booklet (5.5" x 8.5") compatible with the Mothership RPG&trade;. It contains:
                 <ul>
                   <li>optional integration with ship mechanics from the Ship Builder's Toolkit.</li>
                   <li>12 illustrated NPCs.</li>
