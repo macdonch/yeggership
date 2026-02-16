@@ -7,8 +7,9 @@ import Mothership1eLogo from '../../assets/1eLogoWebsite.png';
 const InstrumentsOfDarkness = () => {
 
   const module = {
-    driveThruUrl: 'https://www.drivethrurpg.com/en/product/500887/mothership-nietzsche-s-demon',
-    title: "Nietzsche's Demon",
+    driveThruUrl: 'https://www.drivethrurpg.com/en/product/542459/mothership-instruments-of-darkness',
+    tkgUrl: 'https://www.tuesdayknightgames.com/products/instruments-of-darkness',
+    title: "Instruments of Darkness",
     type: 'module'
   };
   const gcsFolderUrl = 'https://storage.googleapis.com/mothership-375920-media/resources/instrumentsofdarkness/';
@@ -70,14 +71,58 @@ const InstrumentsOfDarkness = () => {
               <br />
               <br />
               <Typography display="inline">
-              Coming soon to DTRPG. Fulfilling now on &nbsp;
-                <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
-                    Kickstarter.
-                </Link>
-                </Typography>
+                A Plague of Lizards threatens millions with starvation. Compliance Officer Aasha Kumari 
+                accompanies your cargo run to the Banquo Mining Facility, looking for the source. An accident 
+                during docking entangles you and your crew in a web of malfeasance, corporate secrets and 
+                spreading madness.
+                <br />
+                <br />
+                Can you survive the evil about to be unleashed by the <i>Instruments of Darkness?</i>?
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid xs={12}>
+            <Box>
+              <br />
+              <br />
+              <Typography display="inline">
+                <i>Nietzsche's Demon</i> is a 32-page half-size booklet (5.5" x 8.5") compatible with the Mothership RPG&trade;. It contains:
+                <ul>
+                  <li>optional integration with ship mechanics from the Ship Builder's Toolkit.</li>
+                  <li>12 illustrated NPCs.</li>
+                  <li>8 optional Survive, Solve or Save events.</li>
+                  <li>Murdered Sleep: a d10 table of recurring visions.</li>
+                  <li>a Villain Monologue.</li>
+                  <li>cosmic horror.</li>
+                  <li>end-of-adventure consequences for one-shots and campaign play.</li>
+                </ul>
+                <br />
+                ALSO INCLUDED:
+                <ul>
+                  <li>audio recordings of the Villain Monologue and an unhinged pilot.</li>
+                  <li>full color and print-friendly pdf</li>
+                  <li>a "Welcome to Banquo" player handout (pdf)</li>
+                  <li>an optional player character sheet for the Compliance Officer (pdf)</li>
+                </ul>
+              </Typography>
             </Box>
           </Grid>
 
+          <Grid xs={12} sx={{ display: 'block' }}>
+            <Typography display="inline">
+              <br />
+              <br />
+              <i>{module.title}</i> is now availabe for purchase at &nbsp;
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
+                DriveThruRPG
+              </Link>
+              &nbsp; and &nbsp;
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.tkgUrl}>
+                Tuesday Knight Games
+              </Link>
+              .
+            </Typography>
+          </Grid>
           
           <Grid xs={12} sx={{ display: 'block' }}>
             <Typography>

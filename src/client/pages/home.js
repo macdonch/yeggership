@@ -25,35 +25,18 @@ const Home = () => {
               Welcome to YEGGERSHIP!
             </Typography>
           </Grid>
-          <Grid xs={12} sx={{ display: { xs: 'none', sm: 'block'} }}>
-            <Typography>
-              Try out our PC Generator at &nbsp;
-              <Link display="inline" underline="true" href="./charactergenerator">
-                PC GEN
-              </Link>
-              .
-              </Typography>
-          </Grid>
           <Grid xs={12} sx={{ display: { xs: 'block', sm: 'none'} }}>
             <Typography>
               Some content will not render on screens with a horizonal resolution below 600px, but we're working on it.
             </Typography>
           </Grid>
           <Grid xs={12}>
-            {/*
-            <Typography display="inline">
-              <i>Claws Out</i> is now available at &nbsp;
-                <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://preview.drivethrurpg.com/en/product/458045/mothership-claws-out-letter-size">
-                    DriveThruRPG!
-              </Link>   
-            </Typography>
-            */}
             <Typography display="inline">
               The <i>Instruments of Darkness</i> &nbsp;
                 <Link display="inline" underline="true" target="_blank" rel="noopener" href="https://www.kickstarter.com/projects/yeggership/instruments-of-darkness-a-mothership-rpg-adventure?ref=8jbbu8">
                     Kickstarter
               </Link>
-              &nbsp; fulfillment is underway!
+              &nbsp; fulfillment is complete!
             </Typography>
             <br />
           </Grid>

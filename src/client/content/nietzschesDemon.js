@@ -8,6 +8,7 @@ const NietzschesDemon = () => {
 
   const module = {
     driveThruUrl: 'https://www.drivethrurpg.com/en/product/500887/mothership-nietzsche-s-demon',
+    tkgUrl: 'https://www.tuesdayknightgames.com/products/nietzsches-demon',
     title: "Nietzsche's Demon",
     type: 'module'
   };
@@ -88,7 +89,7 @@ const NietzschesDemon = () => {
               <br />
               <br />
               <Typography display="inline">
-                <i>Nietzsche's Demon</i> is a 52 page module compatible with the Mothership RPG&trade;. It contains:
+                <i>Nietzsche's Demon</i> is a 52 page half-size booklet (5.5" x 8.5") compatible with the Mothership RPG&trade;. It contains:
                 <ul>
                   <li>Descriptions and portraits for 8 NPCs.</li>
                   <li>A ship design for a small freighter, the <i>Pharaon</i>.</li>
@@ -124,9 +125,13 @@ const NietzschesDemon = () => {
             <Typography display="inline">
               <br />
               <br />
-              <i>{module.title}</i> is now availabe for  purchase at &nbsp;
+              <i>{module.title}</i> is now availabe for purchase at &nbsp;
               <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.driveThruUrl}>
                 DriveThruRPG
+              </Link>
+              &nbsp; and &nbsp;
+              <Link display="inline" underline="true" target="_blank" rel="noopener" href={module.tkgUrl}>
+                Tuesday Knight Games
               </Link>
               .
             </Typography>

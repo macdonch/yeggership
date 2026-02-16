@@ -144,6 +144,16 @@ const GetNews = () => {
 				"date": "October 28, 2025",
 				"title": "Instruments of Darkness Digital Fulfillment",
 				"text": "Instruments of Darkness digital fulfillment is starting today! Printing is also underway, with physical fulfillment expected to being in late November."
+			},
+			{
+				"date": "December 31, 2025",
+				"title": "Instruments of Darkness Complete",
+				"text": "Instruments of Darkness fulfillment is complete, except for a few stragglers."
+			},
+			{
+				"date": "February 16, 2026",
+				"title": "Instruments of Darkness Avaialbe from TKG",
+				"text": "Instruments of Darkness is now available from TKG!"
 			}
 		]
     return newsJson;
